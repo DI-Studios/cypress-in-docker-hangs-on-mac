@@ -4,8 +4,7 @@ services:
     build:
       context: .
       args:
-        CYPRESS_VERSION: '13.6.4'
-        # CHROME_VERSION: '122.0.6261.111-1'
+        CYPRESS_VERSION: '13.6.5'
     platform: linux/amd64
     entrypoint: /bin/bash
     environment:
