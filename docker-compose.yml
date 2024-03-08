@@ -4,11 +4,11 @@ services:
     build:
       context: .
       args:
-        CYPRESS_VERSION: '13.6.5'
+        CYPRESS_VERSION: '13.6.6'
     platform: linux/amd64
     entrypoint: /bin/bash
     environment:
-      DEBUG: cypress:*
+      DEBUG: cypress:*:error
     volumes:
       - /cypress/node_modules
       - .:/cypress
