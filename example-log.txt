@@ -1,0 +1,953 @@
+2024-03-08T19:28:11.641Z cypress:cli:cli cli starts with arguments ["/usr/local/bin/node","/usr/local/bin/cypress","run","-q"]
+2024-03-08T19:28:11.648Z cypress:cli NODE_OPTIONS is not set
+2024-03-08T19:28:11.648Z cypress:cli:cli program parsing arguments
+2024-03-08T19:28:11.653Z cypress:cli:cli running Cypress with args [ Command { _events: [Object: null prototype] { 'option:auto-cancel-after-failures': [Function (anonymous)], 'option:browser': [Function (anonymous)], 'option:ci-build-id': [Function (anonymous)], 'option:component': [Function (anonymous)], 'option:config': [Function (anonymous)], 'option:config-file': [Function (anonymous)], 'option:e2e': [Function (anonymous)], 'option:env': [Function (anonymous)], 'option:group': [Function (anonymous)], 'option:key': [Function (anonymous)], 'option:headed': [Function (anonymous)], 'option:headless': [Function (anonymous)], 'option:no-exit': [Function (anonymous)], 'option:parallel': [Function (anonymous)], 'option:port': [Function (anonymous)], 'option:project': [Function (anonymous)], 'option:quiet': [Function (anonymous)], 'option:record': [Function (anonymous)], 'option:reporter': [Function (anonymous)], 'option:runner-ui': [Function (anonymous)], 'option:no-runner-ui': [Function (anonymous)], 'option:reporter-options': [Function (anonymous)], 'option:spec': [Function (anonymous)], 'option:tag': [Function (anonymous)], 'option:dev': [Function (anonymous)] }, _eventsCount: 25, _maxListeners: undefined, commands: [], options: [ [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option] ], parent: Command { _events: [Object: null prototype], _eventsCount: 1, _maxListeners: undefined, commands: [Array], options: [Array], parent: null, _allowUnknownOption: false, _args: [], rawArgs: [Array], _scriptPath: '/usr/local/bin/cypress', _name: 'cypress', _optionValues: {}, _storeOptionsAsProperties: true, _storeOptionsAsPropertiesCalled: true, _passCommandToAction: true, _actionResults: [], _actionHandler: null, _executableHandler: false, _executableFile: null, _defaultCommandName: null, _exitCallback: null, _aliases: [], _combineFlagAndOptionalValue: true, _hidden: false, _hasHelpOption: true, _helpFlags: '-h, --help', _helpDescription: 'display help for command', _helpShortFlag: '-h', _helpLongFlag: '--help', _hasImplicitHelpCommand: undefined, _helpCommandName: 'help', _helpCommandnameAndArgs: 'help [command]', _helpCommandDescription: 'display help for command', _usage: '<command> [options]', args: [Array], [Symbol(shapeMode)]: false, [Symbol(kCapture)]: false }, _allowUnknownOption: false, _args: [], rawArgs: null, _scriptPath: null, _name: 'run', _optionValues: {}, _storeOptionsAsProperties: true, _storeOptionsAsPropertiesCalled: false, _passCommandToAction: true, _actionResults: [], _actionHandler: [Function: listener], _executableHandler: false, _executableFile: null, _defaultCommandName: null, _exitCallback: null, _aliases: [], _combineFlagAndOptionalValue: true, _hidden: false, _hasHelpOption: true, _helpFlags: '-h, --help', _helpDescription: 'display help for command', _helpShortFlag: '-h', _helpLongFlag: '--help', _hasImplicitHelpCommand: 0, _helpCommandName: 'help', _helpCommandnameAndArgs: 'help [command]', _helpCommandDescription: 'display help for command', _usage: '[options]', _description: 'Runs Cypress tests from the CLI without the GUI', _argsDescription: undefined, exit: true, quiet: true, args: [], [Symbol(shapeMode)]: false, [Symbol(kCapture)]: false } ]
+2024-03-08T19:28:11.724Z cypress:cli:cli variable-length opts parsed { args: [ '/usr/local/bin/node', '/usr/local/bin/cypress', 'run', '-q' ], opts: Command { _events: [Object: null prototype] { 'option:auto-cancel-after-failures': [Function (anonymous)], 'option:browser': [Function (anonymous)], 'option:ci-build-id': [Function (anonymous)], 'option:component': [Function (anonymous)], 'option:config': [Function (anonymous)], 'option:config-file': [Function (anonymous)], 'option:e2e': [Function (anonymous)], 'option:env': [Function (anonymous)], 'option:group': [Function (anonymous)], 'option:key': [Function (anonymous)], 'option:headed': [Function (anonymous)], 'option:headless': [Function (anonymous)], 'option:no-exit': [Function (anonymous)], 'option:parallel': [Function (anonymous)], 'option:port': [Function (anonymous)], 'option:project': [Function (anonymous)], 'option:quiet': [Function (anonymous)], 'option:record': [Function (anonymous)], 'option:reporter': [Function (anonymous)], 'option:runner-ui': [Function (anonymous)], 'option:no-runner-ui': [Function (anonymous)], 'option:reporter-options': [Function (anonymous)], 'option:spec': [Function (anonymous)], 'option:tag': [Function (anonymous)], 'option:dev': [Function (anonymous)] }, _eventsCount: 25, _maxListeners: undefined, commands: [], options: [ [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option], [Option] ], parent: Command { _events: [Object: null prototype], _eventsCount: 1, _maxListeners: undefined, commands: [Array], options: [Array], parent: null, _allowUnknownOption: false, _args: [], rawArgs: [Array], _scriptPath: '/usr/local/bin/cypress', _name: 'cypress', _optionValues: {}, _storeOptionsAsProperties: true, _storeOptionsAsPropertiesCalled: true, _passCommandToAction: true, _actionResults: [], _actionHandler: null, _executableHandler: false, _executableFile: null, _defaultCommandName: null, _exitCallback: null, _aliases: [], _combineFlagAndOptionalValue: true, _hidden: false, _hasHelpOption: true, _helpFlags: '-h, --help', _helpDescription: 'display help for command', _helpShortFlag: '-h', _helpLongFlag: '--help', _hasImplicitHelpCommand: undefined, _helpCommandName: 'help', _helpCommandnameAndArgs: 'help [command]', _helpCommandDescription: 'display help for command', _usage: '<command> [options]', args: [Array], [Symbol(shapeMode)]: false, [Symbol(kCapture)]: false }, _allowUnknownOption: false, _args: [], rawArgs: null, _scriptPath: null, _name: 'run', _optionValues: {}, _storeOptionsAsProperties: true, _storeOptionsAsPropertiesCalled: false, _passCommandToAction: true, _actionResults: [], _actionHandler: [Function: listener], _executableHandler: false, _executableFile: null, _defaultCommandName: null, _exitCallback: null, _aliases: [], _combineFlagAndOptionalValue: true, _hidden: false, _hasHelpOption: true, _helpFlags: '-h, --help', _helpDescription: 'display help for command', _helpShortFlag: '-h', _helpLongFlag: '--help', _hasImplicitHelpCommand: 0, _helpCommandName: 'help', _helpCommandnameAndArgs: 'help [command]', _helpCommandDescription: 'display help for command', _usage: '[options]', _description: 'Runs Cypress tests from the CLI without the GUI', _argsDescription: undefined, exit: true, quiet: true, args: [], [Symbol(shapeMode)]: false, [Symbol(kCapture)]: false } }
+2024-03-08T19:28:11.725Z cypress:cli parsed cli options { quiet: true }
+2024-03-08T19:28:11.726Z cypress:cli verifying Cypress app
+2024-03-08T19:28:11.726Z cypress:cli Using CYPRESS_CACHE_FOLDER from environment variable
+2024-03-08T19:28:11.726Z cypress:cli Using CYPRESS_CACHE_FOLDER from environment variable
+2024-03-08T19:28:11.726Z cypress:cli using environment variable CYPRESS_CACHE_FOLDER /root/.cache/Cypress
+2024-03-08T19:28:11.727Z cypress:cli checking environment variables
+2024-03-08T19:28:11.748Z cypress:cli checking if executable exists /root/.cache/Cypress/13.6.6/Cypress/Cypress
+2024-03-08T19:28:11.774Z cypress:cli Binary is executable? : true
+2024-03-08T19:28:11.775Z cypress:cli binaryDir is  /root/.cache/Cypress/13.6.6/Cypress
+2024-03-08T19:28:11.775Z cypress:cli Reading binary package.json from: /root/.cache/Cypress/13.6.6/Cypress/resources/app/package.json
+2024-03-08T19:28:11.779Z cypress:cli Found binary version 13.6.6 installed in: /root/.cache/Cypress/13.6.6/Cypress
+2024-03-08T19:28:11.780Z cypress:cli { verified: true }
+2024-03-08T19:28:11.781Z cypress:cli is Verified ? true
+2024-03-08T19:28:11.781Z cypress:cli:run processing run options { quiet: true, key: null, spec: null, reporter: null, reporterOptions: null, project: '/cypress' }
+2024-03-08T19:28:11.781Z cypress:cli:run --key is not set, looking up environment variable CYPRESS_RECORD_KEY
+2024-03-08T19:28:11.781Z cypress:cli:run run to spawn.start args ["--run-project","/cypress","--quiet"]
+2024-03-08T19:28:11.782Z cypress:cli undefined DISPLAY environment variable
+2024-03-08T19:28:11.782Z cypress:cli Cypress will spawn its own Xvfb
+2024-03-08T19:28:11.782Z cypress:cli Using CYPRESS_CACHE_FOLDER from environment variable
+2024-03-08T19:28:11.782Z cypress:cli Using CYPRESS_CACHE_FOLDER from environment variable
+2024-03-08T19:28:11.783Z cypress:cli using environment variable CYPRESS_CACHE_FOLDER /root/.cache/Cypress
+2024-03-08T19:28:11.783Z cypress:cli needs to start own Xvfb? true
+2024-03-08T19:28:11.783Z cypress:cli Starting Xvfb
+2024-03-08T19:28:11.803Z cypress:cli spawning, should retry on display problem? false
+2024-03-08T19:28:11.804Z cypress:cli passing DISPLAY :99
+2024-03-08T19:28:11.805Z cypress:cli spawn args [ '--no-sandbox', '--', '--run-project', '/cypress', '--quiet', '--cwd', '/cypress', '--userNodePath', '/usr/local/bin/node', '--userNodeVersion', '20.11.0' ] { detached: false, stdio: [ 'inherit', 'inherit', 'pipe' ] }
+2024-03-08T19:28:11.805Z cypress:cli spawning Cypress with executable: /root/.cache/Cypress/13.6.6/Cypress/Cypress
+2024-03-08T19:28:11.807Z cypress:cli piping child STDERR to process STDERR
+  [31;1mcypress:snapshot:info [0mCaching 3470, defining 4296 modules! Using cache [31m+0ms[0m
+  [33;1mcypress:snapshot:debug [0minitializing packherd require [33m+0ms[0m
+  [36;1mcypress:server:performance-benchmark [0melapsed time at v8-snapshot-startup-time: 348.61ms [36m+0ms[0m
+  [32;1mcypress:server:appdata [0mpath: /root/.config/Cypress/cy/production/browsers [32m+0ms[0m
+  [34;1mcypress:server:cypress [0mstarting cypress with argv [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m, [32m'--no-sandbox'[39m, [32m'--'[39m, [32m'--run-project'[39m, [32m'/cypress'[39m, [32m'--quiet'[39m, [32m'--cwd'[39m, [32m'/cypress'[39m, [32m'--userNodePath'[39m, [32m'/usr/local/bin/node'[39m, [32m'--userNodeVersion'[39m, [32m'20.11.0'[39m ] [34m+0ms[0m
+  [34;1mcypress:server:args [0margv array: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m, [32m'--no-sandbox'[39m, [32m'--run-project'[39m, [32m'/cypress'[39m, [32m'--quiet'[39m, [32m'--cwd'[39m, [32m'/cypress'[39m, [32m'--userNodePath'[39m, [32m'/usr/local/bin/node'[39m, [32m'--userNodeVersion'[39m, [32m'20.11.0'[39m ] [34m+0ms[0m
+  [34;1mcypress:server:args [0mparsed argv options { options: { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, [32m'run-project'[39m: [32m'/cypress'[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m } } [34m+4ms[0m
+  [34;1mcypress:server:args [0margv parsed: { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m } [34m+10ms[0m
+  [36;1mcypress:server:util:proxy [0mfound proxy environment variables {} [36m+0ms[0m
+  [34;1mcypress:server:args [0moptions { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {} } [34m+4ms[0m
+  [34;1mcypress:server:args [0margv options: { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {}, projectRoot: [32m'/cypress'[39m } [34m+1ms[0m
+  [34;1mcypress:server:cypress [0mfrom argv [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m, [32m'--no-sandbox'[39m, [32m'--run-project'[39m, [32m'/cypress'[39m, [32m'--quiet'[39m, [32m'--cwd'[39m, [32m'/cypress'[39m, [32m'--userNodePath'[39m, [32m'/usr/local/bin/node'[39m, [32m'--userNodeVersion'[39m, [32m'20.11.0'[39m ] got options { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {}, projectRoot: [32m'/cypress'[39m } [34m+24ms[0m
+  [34;1mcypress:server:cypress [0mscaling electron app in headless mode [34m+1ms[0m
+  [32;1mcypress:server:appdata [0mpath: /root/.config/Cypress/cy/production [32m+407ms[0m
+
+DevTools listening on ws://127.0.0.1:33217/devtools/browser/39b9d23c-0ba7-4076-9c83-e92bdb855e50
+  [34;1mcypress:server:cypress [0mstarting in mode run with options { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {}, projectRoot: [32m'/cypress'[39m } [34m+460ms[0m
+  [34;1mcypress:server:cypress [0mrunning Electron currently [34m+1ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for Query.cloudLatestRunUpdateSpecData [32m+0ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for Query.cloudProjectBySlug [32m+1ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for Query.cloudProjectsBySlugs [32m+0ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for Query.cloudSpecByPath [32m+0ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for Query.cloudViewer [32m+0ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for Query.pollingIntervals [32m+0ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for Query.versions [32m+0ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for CurrentProject.cloudProject [32m+1ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for RelevantRunInfo.status [32m+2ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for RemoteFetchableCloudProjectResult.data [32m+2ms[0m
+  [32;1mcypress:graphql:nexusDeferIfNotLoadedPlugin [0mAdding nexusDeferIfNotLoadedPlugin for RemoteFetchableCloudProjectSpecResult.data [32m+0ms[0m
+  [33;1mcypress:server:browsers:utils [0mgetBrowsers [33m+0ms[0m
+  [36;1mcypress:launcher:detect [0mdetecting if the following browsers are present [ { name: [32m'chrome'[39m, family: [32m'chromium'[39m, channel: [32m'stable'[39m, displayName: [32m'Chrome'[39m, versionRegex: [31m/Google Chrome (\S+)/m[39m, binary: [ [32m'google-chrome'[39m, [32m'chrome'[39m, [32m'google-chrome-stable'[39m ], minSupportedVersion: [33m64[39m }, { name: [32m'chromium'[39m, family: [32m'chromium'[39m, channel: [32m'stable'[39m, displayName: [32m'Chromium'[39m, versionRegex: [31m/Chromium (\S+)/m[39m, binary: [ [32m'chromium-browser'[39m, [32m'chromium'[39m ], minSupportedVersion: [33m64[39m }, { name: [32m'chrome'[39m, family: [32m'chromium'[39m, channel: [32m'beta'[39m, displayName: [32m'Chrome Beta'[39m, versionRegex: [31m/Google Chrome (\S+) beta/m[39m, binary: [32m'google-chrome-beta'[39m, minSupportedVersion: [33m64[39m }, { name: [32m'chrome'[39m, family: [32m'chromium'[39m, channel: [32m'canary'[39m, displayName: [32m'Canary'[39m, versionRegex: [31m/Google Chrome Canary (\S+)/m[39m, binary: [32m'google-chrome-canary'[39m, minSupportedVersion: [33m64[39m }, { name: [32m'firefox'[39m, family: [32m'firefox'[39m, channel: [32m'stable'[39m, displayName: [32m'Firefox'[39m, versionRegex: [31m/^Mozilla Firefox ([^\sab]+)$/m[39m, binary: [32m'firefox'[39m, minSupportedVersion: [33m86[39m, validator: [36m[Function: validator][39m }, { name: [32m'firefox'[39m, family: [32m'firefox'[39m, channel: [32m'dev'[39m, displayName: [32m'Firefox Developer Edition'[39m, versionRegex: [31m/^Mozilla Firefox (\S+b\S*)$/m[39m, binary: [ [32m'firefox-developer-edition'[39m, [32m'firefox'[39m ], minSupportedVersion: [33m86[39m }, { name: [32m'firefox'[39m, family: [32m'firefox'[39m, channel: [32m'nightly'[39m, displayName: [32m'Firefox Nightly'[39m, versionRegex: [31m/^Mozilla Firefox (\S+a\S*)$/m[39m, binary: [ [32m'firefox-nightly'[39m, [32m'firefox-trunk'[39m ], minSupportedVersion: [33m86[39m }, { name: [32m'edge'[39m, family: [32m'chromium'[39m, channel: [32m'stable'[39m, displayName: [32m'Edge'[39m, versionRegex: [31m/Microsoft Edge (\S+)/im[39m, binary: [ [32m'edge'[39m, [32m'microsoft-edge'[39m ], minSupportedVersion: [33m79[39m }, { name: [32m'edge'[39m, family: [32m'chromium'[39m, channel: [32m'canary'[39m, displayName: [32m'Edge Canary'[39m, versionRegex: [31m/Microsoft Edge.+?(\S*(?= canary)|(?<=canary )\S*)/im[39m, binary: [ [32m'edge-canary'[39m, [32m'microsoft-edge-canary'[39m ], minSupportedVersion: [33m79[39m }, { name: [32m'edge'[39m, family: [32m'chromium'[39m, channel: [32m'beta'[39m, displayName: [32m'Edge Beta'[39m, versionRegex: [31m/Microsoft Edge.+?(\S*(?= beta)|(?<=beta )\S*)/im[39m, binary: [ [32m'edge-beta'[39m, [32m'microsoft-edge-beta'[39m ], minSupportedVersion: [33m79[39m }, { name: [32m'edge'[39m, family: [32m'chromium'[39m, channel: [32m'dev'[39m, displayName: [32m'Edge Dev'[39m, versionRegex: [31m/Microsoft Edge.+?(\S*(?= dev)|(?<=dev )\S*)/im[39m, binary: [ [32m'edge-dev'[39m, [32m'microsoft-edge-dev'[39m ], minSupportedVersion: [33m79[39m } ] [36m+0ms[0m
+  [33;1mcypress:server:browsers:utils [0mWebKit is enabled, but there was an error constructing the WebKit browser: { err: Error: Cannot find module 'playwright-webkit' Require stack: - /root/.cache/Cypress/13.6.6/Cypress/resources/app/packages/server/lib/browsers/utils.ts [90m    at node:internal/modules/cjs/loader:1084:15[39m [90m    at Function._resolveFilename (node:electron/js2c/browser_init:2:116646)[39m [90m    at resolve (node:internal/modules/cjs/helpers:127:19)[39m at Function.resolve (evalmachine.<anonymous>:1:747857) at P (<embedded>:4432:80141) at Object.I [as getBrowsers] (<embedded>:4432:80976) at b.machineBrowsers (<embedded>:4205:74332) at E._setCurrentProject (<embedded>:4388:76800) at new E (<embedded>:4388:69745) at new S (<embedded>:4388:131226) at N (<embedded>:4504:42728) at s.exports (<embedded>:4504:149073) at <embedded>:4511:3280 at tryCatcher (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/util.js:16:23) at Function.<anonymous> (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/method.js:39:29) at Object.runElectron (<embedded>:4511:3050) at Object.startInMode (<embedded>:4511:5738) at <embedded>:4511:4826 at tryCatcher (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/util.js:16:23) at Promise._settlePromiseFromHandler (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:512:31) at Promise._settlePromise (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:569:18) at Promise._settlePromise0 (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:614:10) at Promise._settlePromises (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:694:18) at Promise._fulfill (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:638:18) at PromiseArray._resolve (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise_array.js:126:19) at PromiseArray._promiseFulfilled (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise_array.js:144:14) at Promise._settlePromise (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:574:26) at Promise._settlePromise0 (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:614:10) at Promise._settlePromises (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:694:18) at Promise._fulfill (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:638:18) at Promise._settlePromise (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:582:21) at Promise._settlePromise0 (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:614:10) at Promise._settlePromises (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:694:18) at Promise._fulfill (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:638:18) at Promise._settlePromise (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:582:21) at Promise._settlePromise0 (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:614:10) at Promise._settlePromises (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:694:18) at Promise._fulfill (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:638:18) at PromiseArray._resolve (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise_array.js:126:19) at PromiseArray._promiseFulfilled (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise_array.js:144:14) at Promise._settlePromise (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:574:26) at Promise._settlePromise0 (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:614:10) at Promise._settlePromises (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:694:18) at Promise._fulfill (/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/promise.js:638:18) at /root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/[4mbluebird[24m/js/release/nodeback.js:42:21 at <embedded>:2050:115512 { code: [32m'MODULE_NOT_FOUND'[39m, requireStack: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app/packages/server/lib/browsers/utils.ts'[39m ] } } [33m+2ms[0m
+  [33;1mcypress:data-context:sources:GitDataSource [0mconfig: { isRunMode: [33mtrue[39m, projectRoot: [32m'/cypress'[39m, onError: [36m[Function (anonymous)][39m, onBranchChange: [36m[Function: onBranchChange][39m, onGitInfoChange: [36m[Function: onGitInfoChange][39m, onGitLogChange: [36m[AsyncFunction: onGitLogChange][39m } [33m+0ms[0m
+  [32;1mcypress:scaffold-config:detect [0mChecking for default Cypress config file [32m+0ms[0m
+  [32;1mcypress:scaffold-config:detect [0mDetected cypress.config.ts - using TS [32m+1ms[0m
+  [31;1mcypress:server:video [0musing ffmpeg from /root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/@ffmpeg-installer/linux-x64/ffmpeg [31m+0ms[0m
+  [31;1mcypress:server:run [0mrun start [31m+0ms[0m
+  [33;1mcypress:lifecycle:ProjectConfigIpc [0mfork child process { CHILD_PROCESS_FILE_PATH: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/@packages/server/lib/plugins/child/require_async_child.js'[39m, configProcessArgs: [ [32m'--projectRoot'[39m, [32m'/cypress'[39m, [32m'--file'[39m, [32m'/cypress/cypress.config.ts'[39m ], childOptions: { stdio: [32m'pipe'[39m, cwd: [32m'/cypress'[39m, execPath: [32m'/usr/local/bin/node'[39m } } [33m+0ms[0m
+  [33;1mcypress:lifecycle:ProjectConfigIpc [0mfound typescript in /cypress [33m+2ms[0m
+  [33;1mcypress:lifecycle:ProjectConfigIpc [0musing cjs with --require /root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/@packages/server/lib/plugins/child/register_ts_node.js [33m+0ms[0m
+  [33;1mcypress:lifecycle:ProjectConfigIpc [0mtrigger the load of the file [33m+10ms[0m
+  [32;1mcypress:server:util:process_profiler [0mcurrent & mean memory and CPU usage by process group:
+  [32;1mcypress:server:util:process_profiler [0m┌─────────┬───────────────────┬──────────────┬──────────────┬────────────┬────────────────┬──────────┬──────────────┬─────────────┐
+  [32;1mcypress:server:util:process_profiler [0m│ (index) │       group       │ processCount │     pids     │ cpuPercent │ meanCpuPercent │ memRssMb │ meanMemRssMb │ maxMemRssMb │
+  [32;1mcypress:server:util:process_profiler [0m├─────────┼───────────────────┼──────────────┼──────────────┼────────────┼────────────────┼──────────┼──────────────┼─────────────┤
+  [32;1mcypress:server:util:process_profiler [0m│    0    │     [32m'cypress'[39m     │      [33m1[39m       │    [32m'951'[39m     │     [33m0[39m      │       [33m0[39m        │  [33m380.05[39m  │    [33m380.05[39m    │   [33m380.05[39m    │
+  [32;1mcypress:server:util:process_profiler [0m│    1    │ [32m'electron-shared'[39m │      [33m2[39m       │  [32m'953, 954'[39m  │     [33m0[39m      │       [33m0[39m        │  [33m117.44[39m  │    [33m117.44[39m    │   [33m117.44[39m    │
+  [32;1mcypress:server:util:process_profiler [0m│    2    │      [32m'other'[39m      │      [33m2[39m       │ [32m'1123, 1124'[39m │     [33m0[39m      │       [33m0[39m        │  [33m10.17[39m   │    [33m10.17[39m     │    [33m10.17[39m    │
+  [32;1mcypress:server:util:process_profiler [0m│    3    │      [32m'TOTAL'[39m      │      [33m5[39m       │     [32m'-'[39m      │     [33m0[39m      │       [33m0[39m        │  [33m507.66[39m  │    [33m507.66[39m    │   [33m507.66[39m    │
+  [32;1mcypress:server:util:process_profiler [0m└─────────┴───────────────────┴──────────────┴──────────────┴────────────┴────────────────┴──────────┴──────────────┴─────────────┘ [32m+0ms[0m
+  [33;1mcypress:server:browsers:utils [0mfound browsers { browsers: [] } [33m+414ms[0m
+  [35;1mcypress:server:register-ts-node [0mexecuting register_ts_node with args { _: [ [32m'/usr/local/bin/node'[39m, [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app/node_modules/@packages/server/lib/plugins/child/require_async_child.js'[39m ], projectRoot: [32m'/cypress'[39m, file: [32m'/cypress/cypress.config.ts'[39m, telemetryCtx: [32m'eyJjb250ZXh0Ijp7fSwidmVyc2lvbiI6IjEzLjYuNiJ9'[39m } [35m+0ms[0m
+  [35;1mcypress:server:register-ts-node [0mregistering ts-node for projectRoot: /cypress and file: /cypress/cypress.config.ts [35m+5ms[0m
+  [33;1mcypress:server:ts-node [0mprojectRoot path: /cypress [33m+0ms[0m
+  [33;1mcypress:server:ts-node [0mregisteredFile: /cypress/cypress.config.ts [33m+0ms[0m
+  [35;1mcypress:server:plugins [0mresolving typescript with projectRoot [32m'/cypress'[39m [35m+0ms[0m
+  [35;1mcypress:server:plugins [0mresolved typescript /cypress/node_modules/typescript/lib/typescript.js [35m+1ms[0m
+  [33;1mcypress:server:ts-node [0mtypescript path: /cypress/node_modules/typescript/lib/typescript.js [33m+1ms[0m
+  [33;1mcypress:server:ts-node [0mregistering project TS with options { compiler: [32m'/cypress/node_modules/typescript/lib/typescript.js'[39m, compilerOptions: { module: [32m'commonjs'[39m, moduleResolution: [32m'node'[39m, preserveValueImports: [33mfalse[39m }, ignore: [ [32m'(?:^|/)node_modules/'[39m, [32m'/packages/telemetry/dist/span-exporters/ipc-span-exporter'[39m, [32m'/packages/telemetry/dist/span-exporters/console-trace-link-exporter'[39m, [32m'/packages/telemetry/dist/processors/on-start-span-processor'[39m ], dir: [32m'/cypress'[39m, transpileOnly: [33mtrue[39m } [33m+144ms[0m
+  [31;1mcypress:lifecycle:child:run_require_async_child:1224 [0mconfigFile: /cypress/cypress.config.ts [31m+0ms[0m
+  [31;1mcypress:lifecycle:child:run_require_async_child:1224 [0mprojectRoot: /cypress [31m+0ms[0m
+  [31;1mcypress:lifecycle:child:run_require_async_child:1224 [0mtry loading /cypress/cypress.config.ts [31m+5ms[0m
+  [31;1mcypress:lifecycle:child:run_require_async_child:1224 [0mLoading file /cypress/cypress.config.ts [31m+0ms[0m
+  [32;1mcypress:cli [0mexporting Cypress module interface [32m+0ms[0m
+  [31;1mcypress:lifecycle:child:run_require_async_child:1224 [0mloaded config file /cypress/cypress.config.ts [31m+317ms[0m
+  [33;1mcypress:lifecycle:ProjectConfigIpc [0mloadConfig:reply [33m+1s[0m
+  [31;1mcypress:lifecycle:ProjectConfigManager [0mconfig is loaded for file /cypress/cypress.config.ts null [31m+0ms[0m
+  [32;1mcypress:config:browser [0mvalidating configuration {
+  e2e: { baseUrl: 'https://google.com', supportFile: false, video: false }
+} [32m+0ms[0m
+  [32;1mcypress:config:browser [0mvalidating configuration {} [32m+5ms[0m
+  [36;1mcypress:config:project [0msetting config object { cliConfig: {}, projectName: [32m'cypress'[39m, projectRoot: [32m'/cypress'[39m, repoRoot: [32m'/cypress'[39m, config: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, envFile: {}, options: { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {}, projectRoot: [32m'/cypress'[39m, socketId: [32m'p6bdos25aj'[39m, isTextTerminal: [33mtrue[39m, browser: [32m'electron'[39m, morgan: [33mfalse[39m, report: [33mtrue[39m, testingType: [32m'e2e'[39m, configFile: [32m'cypress.config.ts'[39m }, configFile: [32m'cypress.config.ts'[39m } [36m+0ms[0m
+  [36;1mcypress:config:project [0mconfig is { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m } [36m+0ms[0m
+  [32;1mcypress:config:project:utils [0mmerged config with options, got { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, configFile: [32m'cypress.config.ts'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, socketId: [32m'p6bdos25aj'[39m, report: [33mtrue[39m } [32m+0ms[0m
+  [32;1mcypress:config:project:utils [0musing CYPRESS_INTERNAL_ENV production [32m+7ms[0m
+  [32;1mcypress:config:project:utils [0mresolved config is { value: [], from: [32m'default'[39m } [32m+2ms[0m
+  [32;1mcypress:config:browser [0mvalidating configuration {
+  e2e: {
+    baseUrl: 'https://google.com',
+    supportFile: false,
+    video: false,
+    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'
+  },
+  baseUrl: 'https://google.com',
+  supportFile: false,
+  video: false,
+  projectRoot: '/cypress',
+  projectName: 'cypress',
+  repoRoot: '/cypress',
+  rawJson: {
+    e2e: { baseUrl: 'https://google.com', supportFile: false, video: false },
+    baseUrl: 'https://google.com',
+    supportFile: false,
+    video: false,
+    envFile: {},
+    projectRoot: '/cypress',
+    projectName: 'cypress',
+    repoRoot: '/cypress'
+  },
+  configFile: 'cypress.config.ts',
+  morgan: false,
+  isTextTerminal: true,
+  socketId: 'p6bdos25aj',
+  report: true,
+  animationDistanceThreshold: 5,
+  arch: 'x64',
+  blockHosts: null,
+  chromeWebSecurity: true,
+  clientCertificates: [],
+  component: {
+    specPattern: '**/*.cy.{js,jsx,ts,tsx}',
+    indexHtmlFile: 'cypress/support/component-index.html'
+  },
+  defaultCommandTimeout: 4000,
+  downloadsFolder: 'cypress/downloads',
+  env: {
+    CACHE_FOLDER: '/root/.cache/Cypress',
+    FACTORY_DEFAULT_NODE_VERSION: '20.11.0'
+  },
+  execTimeout: 60000,
+  experimentalCspAllowList: false,
+  experimentalFetchPolyfill: false,
+  experimentalInteractiveRunEvents: false,
+  experimentalRunAllSpecs: false,
+  experimentalMemoryManagement: false,
+  experimentalModifyObstructiveThirdPartyCode: false,
+  experimentalSkipDomainInjection: null,
+  experimentalOriginDependencies: false,
+  experimentalSourceRewriting: false,
+  experimentalSingleTabRunMode: false,
+  experimentalStudio: false,
+  experimentalWebKitSupport: false,
+  fileServerFolder: '',
+  fixturesFolder: 'cypress/fixtures',
+  excludeSpecPattern: '*.hot-update.js',
+  includeShadowDom: false,
+  keystrokeDelay: 0,
+  modifyObstructiveCode: true,
+  numTestsKeptInMemory: 0,
+  platform: 'linux',
+  pageLoadTimeout: 60000,
+  port: null,
+  projectId: null,
+  redirectionLimit: 20,
+  reporter: 'spec',
+  reporterOptions: null,
+  requestTimeout: 5000,
+  resolvedNodePath: null,
+  resolvedNodeVersion: null,
+  responseTimeout: 30000,
+  retries: {
+    runMode: 0,
+    openMode: 0,
+    experimentalStrategy: undefined,
+    experimentalOptions: undefined
+  },
+  screenshotOnRunFailure: true,
+  screenshotsFolder: 'cypress/screenshots',
+  slowTestThreshold: 10000,
+  scrollBehavior: 'top',
+  supportFolder: false,
+  taskTimeout: 60000,
+  testIsolation: true,
+  trashAssetsBeforeRuns: true,
+  userAgent: null,
+  videoCompression: false,
+  videosFolder: 'cypress/videos',
+  viewportHeight: 660,
+  viewportWidth: 1000,
+  waitForAnimations: true,
+  watchForFileChanges: false,
+  specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+  additionalIgnorePattern: [],
+  autoOpen: false,
+  clientRoute: '/__/',
+  cypressBinaryRoot: '/root/.cache/Cypress/13.6.6/Cypress/resources/app',
+  devServerPublicPathRoute: '/__cypress/src',
+  hosts: null,
+  isInteractive: true,
+  namespace: '__cypress',
+  reporterRoute: '/__cypress/reporter',
+  socketIoCookie: '__socket',
+  socketIoRoute: '/__socket',
+  version: '13.6.6',
+  protocolEnabled: false,
+  hideCommandLog: false,
+  hideRunnerUi: false,
+  cypressEnv: 'production',
+  resolved: {
+    animationDistanceThreshold: { value: 5, from: 'default' },
+    arch: { value: 'x64', from: 'default' },
+    baseUrl: { value: 'https://google.com', from: 'config' },
+    blockHosts: { value: null, from: 'default' },
+    chromeWebSecurity: { value: true, from: 'default' },
+    clientCertificates: { value: [], from: 'default' },
+    component: { value: [Object], from: 'default' },
+    defaultCommandTimeout: { value: 4000, from: 'default' },
+    downloadsFolder: { value: 'cypress/downloads', from: 'default' },
+    e2e: { value: [Object], from: 'config' },
+    env: { CACHE_FOLDER: [Object], FACTORY_DEFAULT_NODE_VERSION: [Object] },
+    execTimeout: { value: 60000, from: 'default' },
+    experimentalCspAllowList: { value: false, from: 'default' },
+    experimentalFetchPolyfill: { value: false, from: 'default' },
+    experimentalInteractiveRunEvents: { value: false, from: 'default' },
+    experimentalRunAllSpecs: { value: false, from: 'default' },
+    experimentalMemoryManagement: { value: false, from: 'default' },
+    experimentalModifyObstructiveThirdPartyCode: { value: false, from: 'default' },
+    experimentalSkipDomainInjection: { value: null, from: 'default' },
+    experimentalOriginDependencies: { value: false, from: 'default' },
+    experimentalSourceRewriting: { value: false, from: 'default' },
+    experimentalSingleTabRunMode: { value: false, from: 'default' },
+    experimentalStudio: { value: false, from: 'default' },
+    experimentalWebKitSupport: { value: false, from: 'default' },
+    fileServerFolder: { value: '', from: 'default' },
+    fixturesFolder: { value: 'cypress/fixtures', from: 'default' },
+    excludeSpecPattern: { value: '*.hot-update.js', from: 'default' },
+    includeShadowDom: { value: false, from: 'default' },
+    keystrokeDelay: { value: 0, from: 'default' },
+    modifyObstructiveCode: { value: true, from: 'default' },
+    numTestsKeptInMemory: { value: 0, from: 'config' },
+    platform: { value: 'linux', from: 'default' },
+    pageLoadTimeout: { value: 60000, from: 'default' },
+    port: { value: null, from: 'default' },
+    projectId: { value: null, from: 'default' },
+    redirectionLimit: { value: 20, from: 'default' },
+    reporter: { value: 'spec', from: 'default' },
+    reporterOptions: { value: null, from: 'default' },
+    requestTimeout: { value: 5000, from: 'default' },
+    resolvedNodePath: { value: null, from: 'default' },
+    resolvedNodeVersion: { value: null, from: 'default' },
+    responseTimeout: { value: 30000, from: 'default' },
+    retries: { value: [Object], from: 'default' },
+    screenshotOnRunFailure: { value: true, from: 'default' },
+    screenshotsFolder: { value: 'cypress/screenshots', from: 'default' },
+    slowTestThreshold: { value: 10000, from: 'default' },
+    scrollBehavior: { value: 'top', from: 'default' },
+    supportFile: { value: false, from: 'config' },
+    supportFolder: { value: false, from: 'default' },
+    taskTimeout: { value: 60000, from: 'default' },
+    testIsolation: { value: true, from: 'default' },
+    trashAssetsBeforeRuns: { value: true, from: 'default' },
+    userAgent: { value: null, from: 'default' },
+    video: { value: false, from: 'default' },
+    videoCompression: { value: false, from: 'default' },
+    videosFolder: { value: 'cypress/videos', from: 'default' },
+    viewportHeight: { value: 660, from: 'default' },
+    viewportWidth: { value: 1000, from: 'default' },
+    waitForAnimations: { value: true, from: 'default' },
+    watchForFileChanges: { value: false, from: 'config' },
+    specPattern: { value: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}', from: 'default' },
+    browsers: { value: [], from: 'default' },
+    hosts: { value: null, from: 'default' },
+    isInteractive: { value: true, from: 'default' }
+  }
+} [32m+11ms[0m
+  [32;1mcypress:server:validation [0mclientCerts: [] [32m+0ms[0m
+  [32;1mcypress:config:project:utils [0mvalidate that there is no breaking config options before setupNodeEvents [32m+4ms[0m
+  [31;1mcypress:lifecycle:child:run_require_async_child:1224 [0mloaded config from /cypress/cypress.config.ts { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m } } [31m+1ms[0m
+  [32;1mcypress:config:browser [0mvalidating configuration {
+  baseUrl: 'https://google.com',
+  supportFile: false,
+  video: false,
+  projectRoot: '/cypress',
+  projectName: 'cypress',
+  repoRoot: '/cypress',
+  rawJson: {
+    e2e: { baseUrl: 'https://google.com', supportFile: false, video: false },
+    baseUrl: 'https://google.com',
+    supportFile: false,
+    video: false,
+    envFile: {},
+    projectRoot: '/cypress',
+    projectName: 'cypress',
+    repoRoot: '/cypress'
+  },
+  configFile: 'cypress.config.ts',
+  morgan: false,
+  isTextTerminal: true,
+  socketId: 'p6bdos25aj',
+  report: true,
+  animationDistanceThreshold: 5,
+  arch: 'x64',
+  blockHosts: null,
+  chromeWebSecurity: true,
+  clientCertificates: [],
+  defaultCommandTimeout: 4000,
+  downloadsFolder: '/cypress/cypress/downloads',
+  env: {
+    CACHE_FOLDER: '/root/.cache/Cypress',
+    FACTORY_DEFAULT_NODE_VERSION: '20.11.0'
+  },
+  execTimeout: 60000,
+  experimentalCspAllowList: false,
+  experimentalFetchPolyfill: false,
+  experimentalInteractiveRunEvents: false,
+  experimentalRunAllSpecs: false,
+  experimentalMemoryManagement: false,
+  experimentalModifyObstructiveThirdPartyCode: false,
+  experimentalSkipDomainInjection: null,
+  experimentalOriginDependencies: false,
+  experimentalSourceRewriting: false,
+  experimentalSingleTabRunMode: false,
+  experimentalStudio: false,
+  experimentalWebKitSupport: false,
+  fileServerFolder: '/cypress',
+  fixturesFolder: '/cypress/cypress/fixtures',
+  excludeSpecPattern: '*.hot-update.js',
+  includeShadowDom: false,
+  keystrokeDelay: 0,
+  modifyObstructiveCode: true,
+  numTestsKeptInMemory: 0,
+  platform: 'linux',
+  pageLoadTimeout: 60000,
+  port: null,
+  projectId: null,
+  redirectionLimit: 20,
+  reporter: 'spec',
+  reporterOptions: null,
+  requestTimeout: 5000,
+  resolvedNodePath: '/usr/local/bin/node',
+  resolvedNodeVersion: '20.11.0',
+  responseTimeout: 30000,
+  retries: {
+    runMode: 0,
+    openMode: 0,
+    experimentalStrategy: undefined,
+    experimentalOptions: undefined
+  },
+  screenshotOnRunFailure: true,
+  screenshotsFolder: '/cypress/cypress/screenshots',
+  slowTestThreshold: 10000,
+  scrollBehavior: 'top',
+  supportFolder: false,
+  taskTimeout: 60000,
+  testIsolation: true,
+  trashAssetsBeforeRuns: true,
+  userAgent: null,
+  videoCompression: false,
+  videosFolder: '/cypress/cypress/videos',
+  viewportHeight: 660,
+  viewportWidth: 1000,
+  waitForAnimations: true,
+  watchForFileChanges: false,
+  specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+  additionalIgnorePattern: [],
+  autoOpen: false,
+  browsers: [
+    {
+      name: 'electron',
+      channel: 'stable',
+      family: 'chromium',
+      displayName: 'Electron',
+      version: '118.0.5993.159',
+      path: '',
+      majorVersion: 118
+    }
+  ],
+  clientRoute: '/__/',
+  cypressBinaryRoot: '/root/.cache/Cypress/13.6.6/Cypress/resources/app',
+  devServerPublicPathRoute: '/__cypress/src',
+  hosts: null,
+  isInteractive: true,
+  namespace: '__cypress',
+  reporterRoute: '/__cypress/reporter',
+  socketIoCookie: '__socket',
+  socketIoRoute: '/__socket',
+  version: '13.6.6',
+  protocolEnabled: false,
+  hideCommandLog: false,
+  hideRunnerUi: false,
+  cypressEnv: 'production',
+  resolved: {
+    animationDistanceThreshold: { value: 5, from: 'default' },
+    arch: { value: 'x64', from: 'default' },
+    baseUrl: { value: 'https://google.com', from: 'config' },
+    blockHosts: { value: null, from: 'default' },
+    chromeWebSecurity: { value: true, from: 'default' },
+    clientCertificates: { value: [], from: 'default' },
+    defaultCommandTimeout: { value: 4000, from: 'default' },
+    downloadsFolder: { value: 'cypress/downloads', from: 'default' },
+    env: { CACHE_FOLDER: [Object], FACTORY_DEFAULT_NODE_VERSION: [Object] },
+    execTimeout: { value: 60000, from: 'default' },
+    experimentalCspAllowList: { value: false, from: 'default' },
+    experimentalFetchPolyfill: { value: false, from: 'default' },
+    experimentalInteractiveRunEvents: { value: false, from: 'default' },
+    experimentalRunAllSpecs: { value: false, from: 'default' },
+    experimentalMemoryManagement: { value: false, from: 'default' },
+    experimentalModifyObstructiveThirdPartyCode: { value: false, from: 'default' },
+    experimentalSkipDomainInjection: { value: null, from: 'default' },
+    experimentalOriginDependencies: { value: false, from: 'default' },
+    experimentalSourceRewriting: { value: false, from: 'default' },
+    experimentalSingleTabRunMode: { value: false, from: 'default' },
+    experimentalStudio: { value: false, from: 'default' },
+    experimentalWebKitSupport: { value: false, from: 'default' },
+    fileServerFolder: { value: '', from: 'default' },
+    fixturesFolder: { value: 'cypress/fixtures', from: 'default' },
+    excludeSpecPattern: { value: '*.hot-update.js', from: 'default' },
+    includeShadowDom: { value: false, from: 'default' },
+    keystrokeDelay: { value: 0, from: 'default' },
+    modifyObstructiveCode: { value: true, from: 'default' },
+    numTestsKeptInMemory: { value: 0, from: 'config' },
+    platform: { value: 'linux', from: 'default' },
+    pageLoadTimeout: { value: 60000, from: 'default' },
+    port: { value: null, from: 'default' },
+    projectId: { value: null, from: 'default' },
+    redirectionLimit: { value: 20, from: 'default' },
+    reporter: { value: 'spec', from: 'default' },
+    reporterOptions: { value: null, from: 'default' },
+    requestTimeout: { value: 5000, from: 'default' },
+    resolvedNodePath: { value: null, from: 'default' },
+    resolvedNodeVersion: { value: null, from: 'default' },
+    responseTimeout: { value: 30000, from: 'default' },
+    retries: { value: [Object], from: 'default' },
+    screenshotOnRunFailure: { value: true, from: 'default' },
+    screenshotsFolder: { value: 'cypress/screenshots', from: 'default' },
+    slowTestThreshold: { value: 10000, from: 'default' },
+    scrollBehavior: { value: 'top', from: 'default' },
+    supportFile: { value: false, from: 'config' },
+    supportFolder: { value: false, from: 'default' },
+    taskTimeout: { value: 60000, from: 'default' },
+    testIsolation: { value: true, from: 'default' },
+    trashAssetsBeforeRuns: { value: true, from: 'default' },
+    userAgent: { value: null, from: 'default' },
+    video: { value: false, from: 'default' },
+    videoCompression: { value: false, from: 'default' },
+    videosFolder: { value: 'cypress/videos', from: 'default' },
+    viewportHeight: { value: 660, from: 'default' },
+    viewportWidth: { value: 1000, from: 'default' },
+    waitForAnimations: { value: true, from: 'default' },
+    watchForFileChanges: { value: false, from: 'config' },
+    specPattern: { value: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}', from: 'default' },
+    browsers: { value: [Array], from: 'runtime' },
+    hosts: { value: null, from: 'default' },
+    isInteractive: { value: true, from: 'default' }
+  }
+} [32m+5ms[0m
+  [32;1mcypress:server:validation [0mclientCerts: [] [32m+5ms[0m
+  [32;1mcypress:server:validation [0mbrowsers [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ] [32m+1ms[0m
+  [31;1mcypress:lifecycle:child:run_require_async_child:1224 [0msetupTestingType e2e { additionalIgnorePattern: [], animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, autoOpen: [33mfalse[39m, baseUrl: [32m'https://google.com'[39m, blockHosts: [1mnull[22m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], chromeWebSecurity: [33mtrue[39m, clientCertificates: [], clientRoute: [32m'/__/'[39m, configFile: [32m'/cypress/cypress.config.ts'[39m, cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, cypressEnv: [32m'production'[39m, defaultCommandTimeout: [33m4000[39m, devServerPublicPathRoute: [32m'/__cypress/src'[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, excludeSpecPattern: [32m'*.hot-update.js'[39m, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalOriginDependencies: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalSourceRewriting: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, hideCommandLog: [33mfalse[39m, hideRunnerUi: [33mfalse[39m, hosts: [1mnull[22m, includeShadowDom: [33mfalse[39m, isInteractive: [33mtrue[39m, isTextTerminal: [33mtrue[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, morgan: [33mfalse[39m, namespace: [32m'__cypress'[39m, numTestsKeptInMemory: [33m0[39m, pageLoadTimeout: [33m60000[39m, platform: [32m'linux'[39m, port: [1mnull[22m, projectId: [1mnull[22m, projectName: [32m'cypress'[39m, projectRoot: [32m'/cypress'[39m, protocolEnabled: [33mfalse[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, redirectionLimit: [33m20[39m, repoRoot: [32m'/cypress'[39m, report: [33mtrue[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, reporterRoute: [32m'/__cypress/reporter'[39m, requestTimeout: [33m5000[39m, resolved: { animationDistanceThreshold: { value: [33m5[39m, from: [32m'default'[39m }, arch: { value: [32m'x64'[39m, from: [32m'default'[39m }, baseUrl: { value: [32m'https://google.com'[39m, from: [32m'config'[39m }, blockHosts: { value: [1mnull[22m, from: [32m'default'[39m }, chromeWebSecurity: { value: [33mtrue[39m, from: [32m'default'[39m }, clientCertificates: { value: [], from: [32m'default'[39m }, defaultCommandTimeout: { value: [33m4000[39m, from: [32m'default'[39m }, downloadsFolder: { value: [32m'cypress/downloads'[39m, from: [32m'default'[39m }, env: { CACHE_FOLDER: [36m[Object][39m, FACTORY_DEFAULT_NODE_VERSION: [36m[Object][39m }, execTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, experimentalCspAllowList: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalFetchPolyfill: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalInteractiveRunEvents: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalRunAllSpecs: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalMemoryManagement: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalModifyObstructiveThirdPartyCode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSkipDomainInjection: { value: [1mnull[22m, from: [32m'default'[39m }, experimentalOriginDependencies: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSourceRewriting: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSingleTabRunMode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalStudio: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalWebKitSupport: { value: [33mfalse[39m, from: [32m'default'[39m }, fileServerFolder: { value: [32m''[39m, from: [32m'default'[39m }, fixturesFolder: { value: [32m'cypress/fixtures'[39m, from: [32m'default'[39m }, excludeSpecPattern: { value: [32m'*.hot-update.js'[39m, from: [32m'default'[39m }, includeShadowDom: { value: [33mfalse[39m, from: [32m'default'[39m }, keystrokeDelay: { value: [33m0[39m, from: [32m'default'[39m }, modifyObstructiveCode: { value: [33mtrue[39m, from: [32m'default'[39m }, numTestsKeptInMemory: { value: [33m0[39m, from: [32m'config'[39m }, platform: { value: [32m'linux'[39m, from: [32m'default'[39m }, pageLoadTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, port: { value: [1mnull[22m, from: [32m'default'[39m }, projectId: { value: [1mnull[22m, from: [32m'default'[39m }, redirectionLimit: { value: [33m20[39m, from: [32m'default'[39m }, reporter: { value: [32m'spec'[39m, from: [32m'default'[39m }, reporterOptions: { value: [1mnull[22m, from: [32m'default'[39m }, requestTimeout: { value: [33m5000[39m, from: [32m'default'[39m }, resolvedNodePath: { value: [1mnull[22m, from: [32m'default'[39m }, resolvedNodeVersion: { value: [1mnull[22m, from: [32m'default'[39m }, responseTimeout: { value: [33m30000[39m, from: [32m'default'[39m }, retries: { value: [36m[Object][39m, from: [32m'default'[39m }, screenshotOnRunFailure: { value: [33mtrue[39m, from: [32m'default'[39m }, screenshotsFolder: { value: [32m'cypress/screenshots'[39m, from: [32m'default'[39m }, slowTestThreshold: { value: [33m10000[39m, from: [32m'default'[39m }, scrollBehavior: { value: [32m'top'[39m, from: [32m'default'[39m }, supportFile: { value: [33mfalse[39m, from: [32m'config'[39m }, supportFolder: { value: [33mfalse[39m, from: [32m'default'[39m }, taskTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, testIsolation: { value: [33mtrue[39m, from: [32m'default'[39m }, trashAssetsBeforeRuns: { value: [33mtrue[39m, from: [32m'default'[39m }, userAgent: { value: [1mnull[22m, from: [32m'default'[39m }, video: { value: [33mfalse[39m, from: [32m'default'[39m }, videoCompression: { value: [33mfalse[39m, from: [32m'default'[39m }, videosFolder: { value: [32m'cypress/videos'[39m, from: [32m'default'[39m }, viewportHeight: { value: [33m660[39m, from: [32m'default'[39m }, viewportWidth: { value: [33m1000[39m, from: [32m'default'[39m }, waitForAnimations: { value: [33mtrue[39m, from: [32m'default'[39m }, watchForFileChanges: { value: [33mfalse[39m, from: [32m'config'[39m }, specPattern: { value: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, from: [32m'default'[39m }, browsers: { value: [36m[Array][39m, from: [32m'runtime'[39m }, hosts: { value: [1mnull[22m, from: [32m'default'[39m }, isInteractive: { value: [33mtrue[39m, from: [32m'default'[39m } }, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, scrollBehavior: [32m'top'[39m, slowTestThreshold: [33m10000[39m, socketId: [32m'p6bdos25aj'[39m, socketIoCookie: [32m'__socket'[39m, socketIoRoute: [32m'/__socket'[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, supportFile: [33mfalse[39m, supportFolder: [33mfalse[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, version: [32m'13.6.6'[39m, video: [33mfalse[39m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, testingType: [32m'e2e'[39m } [31m+29ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mproject root: /cypress [32m+0ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mpassing config { additionalIgnorePattern: [], animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, autoOpen: [33mfalse[39m, baseUrl: [32m'https://google.com'[39m, blockHosts: [1mnull[22m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], chromeWebSecurity: [33mtrue[39m, clientCertificates: [], clientRoute: [32m'/__/'[39m, configFile: [32m'/cypress/cypress.config.ts'[39m, cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, cypressEnv: [32m'production'[39m, defaultCommandTimeout: [33m4000[39m, devServerPublicPathRoute: [32m'/__cypress/src'[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, excludeSpecPattern: [32m'*.hot-update.js'[39m, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalOriginDependencies: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalSourceRewriting: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, hideCommandLog: [33mfalse[39m, hideRunnerUi: [33mfalse[39m, hosts: [1mnull[22m, includeShadowDom: [33mfalse[39m, isInteractive: [33mtrue[39m, isTextTerminal: [33mtrue[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, morgan: [33mfalse[39m, namespace: [32m'__cypress'[39m, numTestsKeptInMemory: [33m0[39m, pageLoadTimeout: [33m60000[39m, platform: [32m'linux'[39m, port: [1mnull[22m, projectId: [1mnull[22m, projectName: [32m'cypress'[39m, projectRoot: [32m'/cypress'[39m, protocolEnabled: [33mfalse[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, redirectionLimit: [33m20[39m, repoRoot: [32m'/cypress'[39m, report: [33mtrue[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, reporterRoute: [32m'/__cypress/reporter'[39m, requestTimeout: [33m5000[39m, resolved: { animationDistanceThreshold: { value: [33m5[39m, from: [32m'default'[39m }, arch: { value: [32m'x64'[39m, from: [32m'default'[39m }, baseUrl: { value: [32m'https://google.com'[39m, from: [32m'config'[39m }, blockHosts: { value: [1mnull[22m, from: [32m'default'[39m }, chromeWebSecurity: { value: [33mtrue[39m, from: [32m'default'[39m }, clientCertificates: { value: [], from: [32m'default'[39m }, defaultCommandTimeout: { value: [33m4000[39m, from: [32m'default'[39m }, downloadsFolder: { value: [32m'cypress/downloads'[39m, from: [32m'default'[39m }, env: { CACHE_FOLDER: [36m[Object][39m, FACTORY_DEFAULT_NODE_VERSION: [36m[Object][39m }, execTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, experimentalCspAllowList: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalFetchPolyfill: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalInteractiveRunEvents: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalRunAllSpecs: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalMemoryManagement: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalModifyObstructiveThirdPartyCode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSkipDomainInjection: { value: [1mnull[22m, from: [32m'default'[39m }, experimentalOriginDependencies: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSourceRewriting: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSingleTabRunMode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalStudio: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalWebKitSupport: { value: [33mfalse[39m, from: [32m'default'[39m }, fileServerFolder: { value: [32m''[39m, from: [32m'default'[39m }, fixturesFolder: { value: [32m'cypress/fixtures'[39m, from: [32m'default'[39m }, excludeSpecPattern: { value: [32m'*.hot-update.js'[39m, from: [32m'default'[39m }, includeShadowDom: { value: [33mfalse[39m, from: [32m'default'[39m }, keystrokeDelay: { value: [33m0[39m, from: [32m'default'[39m }, modifyObstructiveCode: { value: [33mtrue[39m, from: [32m'default'[39m }, numTestsKeptInMemory: { value: [33m0[39m, from: [32m'config'[39m }, platform: { value: [32m'linux'[39m, from: [32m'default'[39m }, pageLoadTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, port: { value: [1mnull[22m, from: [32m'default'[39m }, projectId: { value: [1mnull[22m, from: [32m'default'[39m }, redirectionLimit: { value: [33m20[39m, from: [32m'default'[39m }, reporter: { value: [32m'spec'[39m, from: [32m'default'[39m }, reporterOptions: { value: [1mnull[22m, from: [32m'default'[39m }, requestTimeout: { value: [33m5000[39m, from: [32m'default'[39m }, resolvedNodePath: { value: [1mnull[22m, from: [32m'default'[39m }, resolvedNodeVersion: { value: [1mnull[22m, from: [32m'default'[39m }, responseTimeout: { value: [33m30000[39m, from: [32m'default'[39m }, retries: { value: [36m[Object][39m, from: [32m'default'[39m }, screenshotOnRunFailure: { value: [33mtrue[39m, from: [32m'default'[39m }, screenshotsFolder: { value: [32m'cypress/screenshots'[39m, from: [32m'default'[39m }, slowTestThreshold: { value: [33m10000[39m, from: [32m'default'[39m }, scrollBehavior: { value: [32m'top'[39m, from: [32m'default'[39m }, supportFile: { value: [33mfalse[39m, from: [32m'config'[39m }, supportFolder: { value: [33mfalse[39m, from: [32m'default'[39m }, taskTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, testIsolation: { value: [33mtrue[39m, from: [32m'default'[39m }, trashAssetsBeforeRuns: { value: [33mtrue[39m, from: [32m'default'[39m }, userAgent: { value: [1mnull[22m, from: [32m'default'[39m }, video: { value: [33mfalse[39m, from: [32m'default'[39m }, videoCompression: { value: [33mfalse[39m, from: [32m'default'[39m }, videosFolder: { value: [32m'cypress/videos'[39m, from: [32m'default'[39m }, viewportHeight: { value: [33m660[39m, from: [32m'default'[39m }, viewportWidth: { value: [33m1000[39m, from: [32m'default'[39m }, waitForAnimations: { value: [33mtrue[39m, from: [32m'default'[39m }, watchForFileChanges: { value: [33mfalse[39m, from: [32m'config'[39m }, specPattern: { value: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, from: [32m'default'[39m }, browsers: { value: [36m[Array][39m, from: [32m'runtime'[39m }, hosts: { value: [1mnull[22m, from: [32m'default'[39m }, isInteractive: { value: [33mtrue[39m, from: [32m'default'[39m } }, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, scrollBehavior: [32m'top'[39m, slowTestThreshold: [33m10000[39m, socketId: [32m'p6bdos25aj'[39m, socketIoCookie: [32m'__socket'[39m, socketIoRoute: [32m'/__socket'[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, supportFile: [33mfalse[39m, supportFolder: [33mfalse[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, version: [32m'13.6.6'[39m, video: [33mfalse[39m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, testingType: [32m'e2e'[39m } [32m+0ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mLoading the RunPlugins [32m+1ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mregister event _get:task:body with id 0 [32m+1ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mregister event _get:task:keys with id 1 [32m+0ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mregister event _process:cross:origin:callback with id 2 [32m+0ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mCalling setupNodeEvents [32m+0ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mregister default preprocessor [32m+1ms[0m
+  [35;1mcypress:server:plugins [0mresolving typescript with projectRoot [32m'/cypress'[39m [35m+808ms[0m
+  [35;1mcypress:server:plugins [0mresolved typescript /cypress/node_modules/typescript/lib/typescript.js [35m+1ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mcreating webpack preprocessor with options { typescript: [32m'/cypress/node_modules/typescript/lib/typescript.js'[39m } [32m+1ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mregister event file:preprocessor with id 3 [32m+44ms[0m
+  [32;1mcypress:lifecycle:child:RunPlugins:1224 [0mplugins file successfully loaded [32m+0ms[0m
+  [31;1mcypress:lifecycle:ProjectConfigManager [0mregister plugins process event _get:task:body with id 0 [31m+81ms[0m
+  [36;1mcypress:lifecycle:EventRegistrar [0mregister event '_get:task:body' [36m+0ms[0m
+  [31;1mcypress:lifecycle:ProjectConfigManager [0mregister plugins process event _get:task:keys with id 1 [31m+1ms[0m
+  [36;1mcypress:lifecycle:EventRegistrar [0mregister event '_get:task:keys' [36m+1ms[0m
+  [31;1mcypress:lifecycle:ProjectConfigManager [0mregister plugins process event _process:cross:origin:callback with id 2 [31m+0ms[0m
+  [36;1mcypress:lifecycle:EventRegistrar [0mregister event '_process:cross:origin:callback' [36m+0ms[0m
+  [31;1mcypress:lifecycle:ProjectConfigManager [0mregister plugins process event file:preprocessor with id 3 [31m+0ms[0m
+  [36;1mcypress:lifecycle:EventRegistrar [0mregister event 'file:preprocessor' [36m+0ms[0m
+  [32;1mcypress:config:browser [0mvalidating configuration {} [32m+61ms[0m
+  [36;1mcypress:config:project [0msetting config object { cliConfig: {}, projectName: [32m'cypress'[39m, projectRoot: [32m'/cypress'[39m, repoRoot: [32m'/cypress'[39m, config: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, envFile: {}, options: { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {}, projectRoot: [32m'/cypress'[39m, socketId: [32m'p6bdos25aj'[39m, isTextTerminal: [33mtrue[39m, browser: [32m'electron'[39m, morgan: [33mfalse[39m, report: [33mtrue[39m, testingType: [32m'e2e'[39m, configFile: [32m'cypress.config.ts'[39m }, configFile: [32m'cypress.config.ts'[39m } [36m+76ms[0m
+  [36;1mcypress:config:project [0mconfig is { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m } [36m+1ms[0m
+  [32;1mcypress:config:project:utils [0mmerged config with options, got { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, configFile: [32m'cypress.config.ts'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, socketId: [32m'p6bdos25aj'[39m, report: [33mtrue[39m } [32m+63ms[0m
+  [32;1mcypress:config:project:utils [0musing CYPRESS_INTERNAL_ENV production [32m+2ms[0m
+  [32;1mcypress:config:project:utils [0mresolved config is { value: [], from: [32m'default'[39m } [32m+1ms[0m
+  [32;1mcypress:config:browser [0mvalidating configuration {
+  e2e: {
+    baseUrl: 'https://google.com',
+    supportFile: false,
+    video: false,
+    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'
+  },
+  baseUrl: 'https://google.com',
+  supportFile: false,
+  video: false,
+  projectRoot: '/cypress',
+  projectName: 'cypress',
+  repoRoot: '/cypress',
+  rawJson: {
+    e2e: { baseUrl: 'https://google.com', supportFile: false, video: false },
+    baseUrl: 'https://google.com',
+    supportFile: false,
+    video: false,
+    envFile: {},
+    projectRoot: '/cypress',
+    projectName: 'cypress',
+    repoRoot: '/cypress'
+  },
+  configFile: 'cypress.config.ts',
+  morgan: false,
+  isTextTerminal: true,
+  socketId: 'p6bdos25aj',
+  report: true,
+  animationDistanceThreshold: 5,
+  arch: 'x64',
+  blockHosts: null,
+  chromeWebSecurity: true,
+  clientCertificates: [],
+  component: {
+    specPattern: '**/*.cy.{js,jsx,ts,tsx}',
+    indexHtmlFile: 'cypress/support/component-index.html'
+  },
+  defaultCommandTimeout: 4000,
+  downloadsFolder: 'cypress/downloads',
+  env: {
+    CACHE_FOLDER: '/root/.cache/Cypress',
+    FACTORY_DEFAULT_NODE_VERSION: '20.11.0'
+  },
+  execTimeout: 60000,
+  experimentalCspAllowList: false,
+  experimentalFetchPolyfill: false,
+  experimentalInteractiveRunEvents: false,
+  experimentalRunAllSpecs: false,
+  experimentalMemoryManagement: false,
+  experimentalModifyObstructiveThirdPartyCode: false,
+  experimentalSkipDomainInjection: null,
+  experimentalOriginDependencies: false,
+  experimentalSourceRewriting: false,
+  experimentalSingleTabRunMode: false,
+  experimentalStudio: false,
+  experimentalWebKitSupport: false,
+  fileServerFolder: '',
+  fixturesFolder: 'cypress/fixtures',
+  excludeSpecPattern: '*.hot-update.js',
+  includeShadowDom: false,
+  keystrokeDelay: 0,
+  modifyObstructiveCode: true,
+  numTestsKeptInMemory: 0,
+  platform: 'linux',
+  pageLoadTimeout: 60000,
+  port: null,
+  projectId: null,
+  redirectionLimit: 20,
+  reporter: 'spec',
+  reporterOptions: null,
+  requestTimeout: 5000,
+  resolvedNodePath: null,
+  resolvedNodeVersion: null,
+  responseTimeout: 30000,
+  retries: {
+    runMode: 0,
+    openMode: 0,
+    experimentalStrategy: undefined,
+    experimentalOptions: undefined
+  },
+  screenshotOnRunFailure: true,
+  screenshotsFolder: 'cypress/screenshots',
+  slowTestThreshold: 10000,
+  scrollBehavior: 'top',
+  supportFolder: false,
+  taskTimeout: 60000,
+  testIsolation: true,
+  trashAssetsBeforeRuns: true,
+  userAgent: null,
+  videoCompression: false,
+  videosFolder: 'cypress/videos',
+  viewportHeight: 660,
+  viewportWidth: 1000,
+  waitForAnimations: true,
+  watchForFileChanges: false,
+  specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+  additionalIgnorePattern: [],
+  autoOpen: false,
+  clientRoute: '/__/',
+  cypressBinaryRoot: '/root/.cache/Cypress/13.6.6/Cypress/resources/app',
+  devServerPublicPathRoute: '/__cypress/src',
+  hosts: null,
+  isInteractive: true,
+  namespace: '__cypress',
+  reporterRoute: '/__cypress/reporter',
+  socketIoCookie: '__socket',
+  socketIoRoute: '/__socket',
+  version: '13.6.6',
+  protocolEnabled: false,
+  hideCommandLog: false,
+  hideRunnerUi: false,
+  cypressEnv: 'production',
+  resolved: {
+    animationDistanceThreshold: { value: 5, from: 'default' },
+    arch: { value: 'x64', from: 'default' },
+    baseUrl: { value: 'https://google.com', from: 'config' },
+    blockHosts: { value: null, from: 'default' },
+    chromeWebSecurity: { value: true, from: 'default' },
+    clientCertificates: { value: [], from: 'default' },
+    component: { value: [Object], from: 'default' },
+    defaultCommandTimeout: { value: 4000, from: 'default' },
+    downloadsFolder: { value: 'cypress/downloads', from: 'default' },
+    e2e: { value: [Object], from: 'config' },
+    env: { CACHE_FOLDER: [Object], FACTORY_DEFAULT_NODE_VERSION: [Object] },
+    execTimeout: { value: 60000, from: 'default' },
+    experimentalCspAllowList: { value: false, from: 'default' },
+    experimentalFetchPolyfill: { value: false, from: 'default' },
+    experimentalInteractiveRunEvents: { value: false, from: 'default' },
+    experimentalRunAllSpecs: { value: false, from: 'default' },
+    experimentalMemoryManagement: { value: false, from: 'default' },
+    experimentalModifyObstructiveThirdPartyCode: { value: false, from: 'default' },
+    experimentalSkipDomainInjection: { value: null, from: 'default' },
+    experimentalOriginDependencies: { value: false, from: 'default' },
+    experimentalSourceRewriting: { value: false, from: 'default' },
+    experimentalSingleTabRunMode: { value: false, from: 'default' },
+    experimentalStudio: { value: false, from: 'default' },
+    experimentalWebKitSupport: { value: false, from: 'default' },
+    fileServerFolder: { value: '', from: 'default' },
+    fixturesFolder: { value: 'cypress/fixtures', from: 'default' },
+    excludeSpecPattern: { value: '*.hot-update.js', from: 'default' },
+    includeShadowDom: { value: false, from: 'default' },
+    keystrokeDelay: { value: 0, from: 'default' },
+    modifyObstructiveCode: { value: true, from: 'default' },
+    numTestsKeptInMemory: { value: 0, from: 'config' },
+    platform: { value: 'linux', from: 'default' },
+    pageLoadTimeout: { value: 60000, from: 'default' },
+    port: { value: null, from: 'default' },
+    projectId: { value: null, from: 'default' },
+    redirectionLimit: { value: 20, from: 'default' },
+    reporter: { value: 'spec', from: 'default' },
+    reporterOptions: { value: null, from: 'default' },
+    requestTimeout: { value: 5000, from: 'default' },
+    resolvedNodePath: { value: null, from: 'default' },
+    resolvedNodeVersion: { value: null, from: 'default' },
+    responseTimeout: { value: 30000, from: 'default' },
+    retries: { value: [Object], from: 'default' },
+    screenshotOnRunFailure: { value: true, from: 'default' },
+    screenshotsFolder: { value: 'cypress/screenshots', from: 'default' },
+    slowTestThreshold: { value: 10000, from: 'default' },
+    scrollBehavior: { value: 'top', from: 'default' },
+    supportFile: { value: false, from: 'config' },
+    supportFolder: { value: false, from: 'default' },
+    taskTimeout: { value: 60000, from: 'default' },
+    testIsolation: { value: true, from: 'default' },
+    trashAssetsBeforeRuns: { value: true, from: 'default' },
+    userAgent: { value: null, from: 'default' },
+    video: { value: false, from: 'default' },
+    videoCompression: { value: false, from: 'default' },
+    videosFolder: { value: 'cypress/videos', from: 'default' },
+    viewportHeight: { value: 660, from: 'default' },
+    viewportWidth: { value: 1000, from: 'default' },
+    waitForAnimations: { value: true, from: 'default' },
+    watchForFileChanges: { value: false, from: 'config' },
+    specPattern: { value: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}', from: 'default' },
+    browsers: { value: [], from: 'default' },
+    hosts: { value: null, from: 'default' },
+    isInteractive: { value: true, from: 'default' }
+  }
+} [32m+4ms[0m
+  [32;1mcypress:server:validation [0mclientCerts: [] [32m+64ms[0m
+  [32;1mcypress:config:project:utils [0mvalidate that there is no breaking config options before setupNodeEvents [32m+1ms[0m
+  [32;1mcypress:config:browser [0mvalidating configuration {
+  baseUrl: 'https://google.com',
+  supportFile: false,
+  video: false,
+  projectRoot: '/cypress',
+  projectName: 'cypress',
+  repoRoot: '/cypress',
+  rawJson: {
+    e2e: { baseUrl: 'https://google.com', supportFile: false, video: false },
+    baseUrl: 'https://google.com',
+    supportFile: false,
+    video: false,
+    envFile: {},
+    projectRoot: '/cypress',
+    projectName: 'cypress',
+    repoRoot: '/cypress'
+  },
+  configFile: 'cypress.config.ts',
+  morgan: false,
+  isTextTerminal: true,
+  socketId: 'p6bdos25aj',
+  report: true,
+  animationDistanceThreshold: 5,
+  arch: 'x64',
+  blockHosts: null,
+  chromeWebSecurity: true,
+  clientCertificates: [],
+  defaultCommandTimeout: 4000,
+  downloadsFolder: '/cypress/cypress/downloads',
+  env: {
+    CACHE_FOLDER: '/root/.cache/Cypress',
+    FACTORY_DEFAULT_NODE_VERSION: '20.11.0'
+  },
+  execTimeout: 60000,
+  experimentalCspAllowList: false,
+  experimentalFetchPolyfill: false,
+  experimentalInteractiveRunEvents: false,
+  experimentalRunAllSpecs: false,
+  experimentalMemoryManagement: false,
+  experimentalModifyObstructiveThirdPartyCode: false,
+  experimentalSkipDomainInjection: null,
+  experimentalOriginDependencies: false,
+  experimentalSourceRewriting: false,
+  experimentalSingleTabRunMode: false,
+  experimentalStudio: false,
+  experimentalWebKitSupport: false,
+  fileServerFolder: '/cypress',
+  fixturesFolder: '/cypress/cypress/fixtures',
+  excludeSpecPattern: '*.hot-update.js',
+  includeShadowDom: false,
+  keystrokeDelay: 0,
+  modifyObstructiveCode: true,
+  numTestsKeptInMemory: 0,
+  platform: 'linux',
+  pageLoadTimeout: 60000,
+  port: null,
+  projectId: null,
+  redirectionLimit: 20,
+  reporter: 'spec',
+  reporterOptions: null,
+  requestTimeout: 5000,
+  resolvedNodePath: '/usr/local/bin/node',
+  resolvedNodeVersion: '20.11.0',
+  responseTimeout: 30000,
+  retries: {
+    runMode: 0,
+    openMode: 0,
+    experimentalStrategy: undefined,
+    experimentalOptions: undefined
+  },
+  screenshotOnRunFailure: true,
+  screenshotsFolder: '/cypress/cypress/screenshots',
+  slowTestThreshold: 10000,
+  scrollBehavior: 'top',
+  supportFolder: false,
+  taskTimeout: 60000,
+  testIsolation: true,
+  trashAssetsBeforeRuns: true,
+  userAgent: null,
+  videoCompression: false,
+  videosFolder: '/cypress/cypress/videos',
+  viewportHeight: 660,
+  viewportWidth: 1000,
+  waitForAnimations: true,
+  watchForFileChanges: false,
+  specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
+  additionalIgnorePattern: [],
+  autoOpen: false,
+  browsers: [
+    {
+      name: 'electron',
+      channel: 'stable',
+      family: 'chromium',
+      displayName: 'Electron',
+      version: '118.0.5993.159',
+      path: '',
+      majorVersion: 118
+    }
+  ],
+  clientRoute: '/__/',
+  cypressBinaryRoot: '/root/.cache/Cypress/13.6.6/Cypress/resources/app',
+  devServerPublicPathRoute: '/__cypress/src',
+  hosts: null,
+  isInteractive: true,
+  namespace: '__cypress',
+  reporterRoute: '/__cypress/reporter',
+  socketIoCookie: '__socket',
+  socketIoRoute: '/__socket',
+  version: '13.6.6',
+  protocolEnabled: false,
+  hideCommandLog: false,
+  hideRunnerUi: false,
+  cypressEnv: 'production',
+  resolved: {
+    animationDistanceThreshold: { value: 5, from: 'default' },
+    arch: { value: 'x64', from: 'default' },
+    baseUrl: { value: 'https://google.com', from: 'config' },
+    blockHosts: { value: null, from: 'default' },
+    chromeWebSecurity: { value: true, from: 'default' },
+    clientCertificates: { value: [], from: 'default' },
+    defaultCommandTimeout: { value: 4000, from: 'default' },
+    downloadsFolder: { value: 'cypress/downloads', from: 'default' },
+    env: { CACHE_FOLDER: [Object], FACTORY_DEFAULT_NODE_VERSION: [Object] },
+    execTimeout: { value: 60000, from: 'default' },
+    experimentalCspAllowList: { value: false, from: 'default' },
+    experimentalFetchPolyfill: { value: false, from: 'default' },
+    experimentalInteractiveRunEvents: { value: false, from: 'default' },
+    experimentalRunAllSpecs: { value: false, from: 'default' },
+    experimentalMemoryManagement: { value: false, from: 'default' },
+    experimentalModifyObstructiveThirdPartyCode: { value: false, from: 'default' },
+    experimentalSkipDomainInjection: { value: null, from: 'default' },
+    experimentalOriginDependencies: { value: false, from: 'default' },
+    experimentalSourceRewriting: { value: false, from: 'default' },
+    experimentalSingleTabRunMode: { value: false, from: 'default' },
+    experimentalStudio: { value: false, from: 'default' },
+    experimentalWebKitSupport: { value: false, from: 'default' },
+    fileServerFolder: { value: '', from: 'default' },
+    fixturesFolder: { value: 'cypress/fixtures', from: 'default' },
+    excludeSpecPattern: { value: '*.hot-update.js', from: 'default' },
+    includeShadowDom: { value: false, from: 'default' },
+    keystrokeDelay: { value: 0, from: 'default' },
+    modifyObstructiveCode: { value: true, from: 'default' },
+    numTestsKeptInMemory: { value: 0, from: 'config' },
+    platform: { value: 'linux', from: 'default' },
+    pageLoadTimeout: { value: 60000, from: 'default' },
+    port: { value: null, from: 'default' },
+    projectId: { value: null, from: 'default' },
+    redirectionLimit: { value: 20, from: 'default' },
+    reporter: { value: 'spec', from: 'default' },
+    reporterOptions: { value: null, from: 'default' },
+    requestTimeout: { value: 5000, from: 'default' },
+    resolvedNodePath: { value: null, from: 'default' },
+    resolvedNodeVersion: { value: null, from: 'default' },
+    responseTimeout: { value: 30000, from: 'default' },
+    retries: { value: [Object], from: 'default' },
+    screenshotOnRunFailure: { value: true, from: 'default' },
+    screenshotsFolder: { value: 'cypress/screenshots', from: 'default' },
+    slowTestThreshold: { value: 10000, from: 'default' },
+    scrollBehavior: { value: 'top', from: 'default' },
+    supportFile: { value: false, from: 'config' },
+    supportFolder: { value: false, from: 'default' },
+    taskTimeout: { value: 60000, from: 'default' },
+    testIsolation: { value: true, from: 'default' },
+    trashAssetsBeforeRuns: { value: true, from: 'default' },
+    userAgent: { value: null, from: 'default' },
+    video: { value: false, from: 'default' },
+    videoCompression: { value: false, from: 'default' },
+    videosFolder: { value: 'cypress/videos', from: 'default' },
+    viewportHeight: { value: 660, from: 'default' },
+    viewportWidth: { value: 1000, from: 'default' },
+    waitForAnimations: { value: true, from: 'default' },
+    watchForFileChanges: { value: false, from: 'config' },
+    specPattern: { value: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}', from: 'default' },
+    browsers: { value: [Array], from: 'runtime' },
+    hosts: { value: null, from: 'default' },
+    isInteractive: { value: true, from: 'default' }
+  }
+} [32m+1ms[0m
+  [32;1mcypress:server:validation [0mclientCerts: [] [32m+2ms[0m
+  [32;1mcypress:server:validation [0mbrowsers [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ] [32m+0ms[0m
+  [36;1mcypress:config:project [0mupdateWithPluginValues { cfg: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m, rawJson: { e2e: [36m[Object][39m, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, configFile: [32m'cypress.config.ts'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, socketId: [32m'p6bdos25aj'[39m, report: [33mtrue[39m, animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, blockHosts: [1mnull[22m, chromeWebSecurity: [33mtrue[39m, clientCertificates: [], defaultCommandTimeout: [33m4000[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalOriginDependencies: [33mfalse[39m, experimentalSourceRewriting: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, excludeSpecPattern: [32m'*.hot-update.js'[39m, includeShadowDom: [33mfalse[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, numTestsKeptInMemory: [33m0[39m, platform: [32m'linux'[39m, pageLoadTimeout: [33m60000[39m, port: [1mnull[22m, projectId: [1mnull[22m, redirectionLimit: [33m20[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, requestTimeout: [33m5000[39m, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m, experimentalStrategy: [90mundefined[39m, experimentalOptions: [90mundefined[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, slowTestThreshold: [33m10000[39m, scrollBehavior: [32m'top'[39m, supportFolder: [33mfalse[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, additionalIgnorePattern: [], autoOpen: [33mfalse[39m, browsers: [ [36m[Object][39m ], clientRoute: [32m'/__/'[39m, cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, devServerPublicPathRoute: [32m'/__cypress/src'[39m, hosts: [1mnull[22m, isInteractive: [33mtrue[39m, namespace: [32m'__cypress'[39m, reporterRoute: [32m'/__cypress/reporter'[39m, socketIoCookie: [32m'__socket'[39m, socketIoRoute: [32m'/__socket'[39m, version: [32m'13.6.6'[39m, protocolEnabled: [33mfalse[39m, hideCommandLog: [33mfalse[39m, hideRunnerUi: [33mfalse[39m, cypressEnv: [32m'production'[39m, resolved: { animationDistanceThreshold: [36m[Object][39m, arch: [36m[Object][39m, baseUrl: [36m[Object][39m, blockHosts: [36m[Object][39m, chromeWebSecurity: [36m[Object][39m, clientCertificates: [36m[Object][39m, defaultCommandTimeout: [36m[Object][39m, downloadsFolder: [36m[Object][39m, env: [36m[Object][39m, execTimeout: [36m[Object][39m, experimentalCspAllowList: [36m[Object][39m, experimentalFetchPolyfill: [36m[Object][39m, experimentalInteractiveRunEvents: [36m[Object][39m, experimentalRunAllSpecs: [36m[Object][39m, experimentalMemoryManagement: [36m[Object][39m, experimentalModifyObstructiveThirdPartyCode: [36m[Object][39m, experimentalSkipDomainInjection: [36m[Object][39m, experimentalOriginDependencies: [36m[Object][39m, experimentalSourceRewriting: [36m[Object][39m, experimentalSingleTabRunMode: [36m[Object][39m, experimentalStudio: [36m[Object][39m, experimentalWebKitSupport: [36m[Object][39m, fileServerFolder: [36m[Object][39m, fixturesFolder: [36m[Object][39m, excludeSpecPattern: [36m[Object][39m, includeShadowDom: [36m[Object][39m, keystrokeDelay: [36m[Object][39m, modifyObstructiveCode: [36m[Object][39m, numTestsKeptInMemory: [36m[Object][39m, platform: [36m[Object][39m, pageLoadTimeout: [36m[Object][39m, port: [36m[Object][39m, projectId: [36m[Object][39m, redirectionLimit: [36m[Object][39m, reporter: [36m[Object][39m, reporterOptions: [36m[Object][39m, requestTimeout: [36m[Object][39m, resolvedNodePath: [36m[Object][39m, resolvedNodeVersion: [36m[Object][39m, responseTimeout: [36m[Object][39m, retries: [36m[Object][39m, screenshotOnRunFailure: [36m[Object][39m, screenshotsFolder: [36m[Object][39m, slowTestThreshold: [36m[Object][39m, scrollBehavior: [36m[Object][39m, supportFile: [36m[Object][39m, supportFolder: [36m[Object][39m, taskTimeout: [36m[Object][39m, testIsolation: [36m[Object][39m, trashAssetsBeforeRuns: [36m[Object][39m, userAgent: [36m[Object][39m, video: [36m[Object][39m, videoCompression: [36m[Object][39m, videosFolder: [36m[Object][39m, viewportHeight: [36m[Object][39m, viewportWidth: [36m[Object][39m, waitForAnimations: [36m[Object][39m, watchForFileChanges: [36m[Object][39m, specPattern: [36m[Object][39m, browsers: [36m[Object][39m, hosts: [36m[Object][39m, isInteractive: [36m[Object][39m } }, modifiedConfig: {} } [36m+7ms[0m
+  [32;1mcypress:config:browser [0mvalidating configuration {} [32m+3ms[0m
+  [36;1mcypress:config:project [0mvalidate that there is no breaking config options added by setupNodeEvents [36m+0ms[0m
+  [36;1mcypress:config:project [0mconfig diffs [1mnull[22m [36m+1ms[0m
+  [36;1mcypress:config:project [0mmerged config object { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, configFile: [32m'cypress.config.ts'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, socketId: [32m'p6bdos25aj'[39m, report: [33mtrue[39m, animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, blockHosts: [1mnull[22m, chromeWebSecurity: [33mtrue[39m, clientCertificates: [], defaultCommandTimeout: [33m4000[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalOriginDependencies: [33mfalse[39m, experimentalSourceRewriting: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, excludeSpecPattern: [32m'*.hot-update.js'[39m, includeShadowDom: [33mfalse[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, numTestsKeptInMemory: [33m0[39m, platform: [32m'linux'[39m, pageLoadTimeout: [33m60000[39m, port: [1mnull[22m, projectId: [1mnull[22m, redirectionLimit: [33m20[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, requestTimeout: [33m5000[39m, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m, experimentalStrategy: [90mundefined[39m, experimentalOptions: [90mundefined[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, slowTestThreshold: [33m10000[39m, scrollBehavior: [32m'top'[39m, supportFolder: [33mfalse[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, additionalIgnorePattern: [], autoOpen: [33mfalse[39m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], clientRoute: [32m'/__/'[39m, cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, devServerPublicPathRoute: [32m'/__cypress/src'[39m, hosts: [1mnull[22m, isInteractive: [33mtrue[39m, namespace: [32m'__cypress'[39m, reporterRoute: [32m'/__cypress/reporter'[39m, socketIoCookie: [32m'__socket'[39m, socketIoRoute: [32m'/__socket'[39m, version: [32m'13.6.6'[39m, protocolEnabled: [33mfalse[39m, hideCommandLog: [33mfalse[39m, hideRunnerUi: [33mfalse[39m, cypressEnv: [32m'production'[39m, resolved: { animationDistanceThreshold: { value: [33m5[39m, from: [32m'default'[39m }, arch: { value: [32m'x64'[39m, from: [32m'default'[39m }, baseUrl: { value: [32m'https://google.com'[39m, from: [32m'config'[39m }, blockHosts: { value: [1mnull[22m, from: [32m'default'[39m }, chromeWebSecurity: { value: [33mtrue[39m, from: [32m'default'[39m }, clientCertificates: { value: [], from: [32m'default'[39m }, defaultCommandTimeout: { value: [33m4000[39m, from: [32m'default'[39m }, downloadsFolder: { value: [32m'cypress/downloads'[39m, from: [32m'default'[39m }, env: { CACHE_FOLDER: [36m[Object][39m, FACTORY_DEFAULT_NODE_VERSION: [36m[Object][39m }, execTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, experimentalCspAllowList: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalFetchPolyfill: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalInteractiveRunEvents: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalRunAllSpecs: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalMemoryManagement: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalModifyObstructiveThirdPartyCode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSkipDomainInjection: { value: [1mnull[22m, from: [32m'default'[39m }, experimentalOriginDependencies: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSourceRewriting: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSingleTabRunMode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalStudio: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalWebKitSupport: { value: [33mfalse[39m, from: [32m'default'[39m }, fileServerFolder: { value: [32m''[39m, from: [32m'default'[39m }, fixturesFolder: { value: [32m'cypress/fixtures'[39m, from: [32m'default'[39m }, excludeSpecPattern: { value: [32m'*.hot-update.js'[39m, from: [32m'default'[39m }, includeShadowDom: { value: [33mfalse[39m, from: [32m'default'[39m }, keystrokeDelay: { value: [33m0[39m, from: [32m'default'[39m }, modifyObstructiveCode: { value: [33mtrue[39m, from: [32m'default'[39m }, numTestsKeptInMemory: { value: [33m0[39m, from: [32m'config'[39m }, platform: { value: [32m'linux'[39m, from: [32m'default'[39m }, pageLoadTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, port: { value: [1mnull[22m, from: [32m'default'[39m }, projectId: { value: [1mnull[22m, from: [32m'default'[39m }, redirectionLimit: { value: [33m20[39m, from: [32m'default'[39m }, reporter: { value: [32m'spec'[39m, from: [32m'default'[39m }, reporterOptions: { value: [1mnull[22m, from: [32m'default'[39m }, requestTimeout: { value: [33m5000[39m, from: [32m'default'[39m }, resolvedNodePath: { value: [1mnull[22m, from: [32m'default'[39m }, resolvedNodeVersion: { value: [1mnull[22m, from: [32m'default'[39m }, responseTimeout: { value: [33m30000[39m, from: [32m'default'[39m }, retries: { value: [36m[Object][39m, from: [32m'default'[39m }, screenshotOnRunFailure: { value: [33mtrue[39m, from: [32m'default'[39m }, screenshotsFolder: { value: [32m'cypress/screenshots'[39m, from: [32m'default'[39m }, slowTestThreshold: { value: [33m10000[39m, from: [32m'default'[39m }, scrollBehavior: { value: [32m'top'[39m, from: [32m'default'[39m }, supportFile: { value: [33mfalse[39m, from: [32m'config'[39m }, supportFolder: { value: [33mfalse[39m, from: [32m'default'[39m }, taskTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, testIsolation: { value: [33mtrue[39m, from: [32m'default'[39m }, trashAssetsBeforeRuns: { value: [33mtrue[39m, from: [32m'default'[39m }, userAgent: { value: [1mnull[22m, from: [32m'default'[39m }, video: { value: [33mfalse[39m, from: [32m'default'[39m }, videoCompression: { value: [33mfalse[39m, from: [32m'default'[39m }, videosFolder: { value: [32m'cypress/videos'[39m, from: [32m'default'[39m }, viewportHeight: { value: [33m660[39m, from: [32m'default'[39m }, viewportWidth: { value: [33m1000[39m, from: [32m'default'[39m }, waitForAnimations: { value: [33mtrue[39m, from: [32m'default'[39m }, watchForFileChanges: { value: [33mfalse[39m, from: [32m'config'[39m }, specPattern: { value: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, from: [32m'default'[39m }, browsers: { value: [36m[Array][39m, from: [32m'runtime'[39m }, hosts: { value: [1mnull[22m, from: [32m'default'[39m }, isInteractive: { value: [33mtrue[39m, from: [32m'default'[39m } } } [36m+1ms[0m
+  [36;1mcypress:config:project [0mmerged plugins config { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, configFile: [32m'cypress.config.ts'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, socketId: [32m'p6bdos25aj'[39m, report: [33mtrue[39m, animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, blockHosts: [1mnull[22m, chromeWebSecurity: [33mtrue[39m, clientCertificates: [], defaultCommandTimeout: [33m4000[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalOriginDependencies: [33mfalse[39m, experimentalSourceRewriting: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, excludeSpecPattern: [32m'*.hot-update.js'[39m, includeShadowDom: [33mfalse[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, numTestsKeptInMemory: [33m0[39m, platform: [32m'linux'[39m, pageLoadTimeout: [33m60000[39m, port: [1mnull[22m, projectId: [1mnull[22m, redirectionLimit: [33m20[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, requestTimeout: [33m5000[39m, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m, experimentalStrategy: [90mundefined[39m, experimentalOptions: [90mundefined[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, slowTestThreshold: [33m10000[39m, scrollBehavior: [32m'top'[39m, supportFolder: [33mfalse[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, additionalIgnorePattern: [], autoOpen: [33mfalse[39m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], clientRoute: [32m'/__/'[39m, cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, devServerPublicPathRoute: [32m'/__cypress/src'[39m, hosts: [1mnull[22m, isInteractive: [33mtrue[39m, namespace: [32m'__cypress'[39m, reporterRoute: [32m'/__cypress/reporter'[39m, socketIoCookie: [32m'__socket'[39m, socketIoRoute: [32m'/__socket'[39m, version: [32m'13.6.6'[39m, protocolEnabled: [33mfalse[39m, hideCommandLog: [33mfalse[39m, hideRunnerUi: [33mfalse[39m, cypressEnv: [32m'production'[39m, resolved: { animationDistanceThreshold: { value: [33m5[39m, from: [32m'default'[39m }, arch: { value: [32m'x64'[39m, from: [32m'default'[39m }, baseUrl: { value: [32m'https://google.com'[39m, from: [32m'config'[39m }, blockHosts: { value: [1mnull[22m, from: [32m'default'[39m }, chromeWebSecurity: { value: [33mtrue[39m, from: [32m'default'[39m }, clientCertificates: { value: [], from: [32m'default'[39m }, defaultCommandTimeout: { value: [33m4000[39m, from: [32m'default'[39m }, downloadsFolder: { value: [32m'cypress/downloads'[39m, from: [32m'default'[39m }, env: { CACHE_FOLDER: [36m[Object][39m, FACTORY_DEFAULT_NODE_VERSION: [36m[Object][39m }, execTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, experimentalCspAllowList: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalFetchPolyfill: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalInteractiveRunEvents: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalRunAllSpecs: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalMemoryManagement: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalModifyObstructiveThirdPartyCode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSkipDomainInjection: { value: [1mnull[22m, from: [32m'default'[39m }, experimentalOriginDependencies: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSourceRewriting: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSingleTabRunMode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalStudio: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalWebKitSupport: { value: [33mfalse[39m, from: [32m'default'[39m }, fileServerFolder: { value: [32m''[39m, from: [32m'default'[39m }, fixturesFolder: { value: [32m'cypress/fixtures'[39m, from: [32m'default'[39m }, excludeSpecPattern: { value: [32m'*.hot-update.js'[39m, from: [32m'default'[39m }, includeShadowDom: { value: [33mfalse[39m, from: [32m'default'[39m }, keystrokeDelay: { value: [33m0[39m, from: [32m'default'[39m }, modifyObstructiveCode: { value: [33mtrue[39m, from: [32m'default'[39m }, numTestsKeptInMemory: { value: [33m0[39m, from: [32m'config'[39m }, platform: { value: [32m'linux'[39m, from: [32m'default'[39m }, pageLoadTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, port: { value: [1mnull[22m, from: [32m'default'[39m }, projectId: { value: [1mnull[22m, from: [32m'default'[39m }, redirectionLimit: { value: [33m20[39m, from: [32m'default'[39m }, reporter: { value: [32m'spec'[39m, from: [32m'default'[39m }, reporterOptions: { value: [1mnull[22m, from: [32m'default'[39m }, requestTimeout: { value: [33m5000[39m, from: [32m'default'[39m }, resolvedNodePath: { value: [1mnull[22m, from: [32m'default'[39m }, resolvedNodeVersion: { value: [1mnull[22m, from: [32m'default'[39m }, responseTimeout: { value: [33m30000[39m, from: [32m'default'[39m }, retries: { value: [36m[Object][39m, from: [32m'default'[39m }, screenshotOnRunFailure: { value: [33mtrue[39m, from: [32m'default'[39m }, screenshotsFolder: { value: [32m'cypress/screenshots'[39m, from: [32m'default'[39m }, slowTestThreshold: { value: [33m10000[39m, from: [32m'default'[39m }, scrollBehavior: { value: [32m'top'[39m, from: [32m'default'[39m }, supportFile: { value: [33mfalse[39m, from: [32m'config'[39m }, supportFolder: { value: [33mfalse[39m, from: [32m'default'[39m }, taskTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, testIsolation: { value: [33mtrue[39m, from: [32m'default'[39m }, trashAssetsBeforeRuns: { value: [33mtrue[39m, from: [32m'default'[39m }, userAgent: { value: [1mnull[22m, from: [32m'default'[39m }, video: { value: [33mfalse[39m, from: [32m'default'[39m }, videoCompression: { value: [33mfalse[39m, from: [32m'default'[39m }, videosFolder: { value: [32m'cypress/videos'[39m, from: [32m'default'[39m }, viewportHeight: { value: [33m660[39m, from: [32m'default'[39m }, viewportWidth: { value: [33m1000[39m, from: [32m'default'[39m }, waitForAnimations: { value: [33mtrue[39m, from: [32m'default'[39m }, watchForFileChanges: { value: [33mfalse[39m, from: [32m'config'[39m }, specPattern: { value: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, from: [32m'default'[39m }, browsers: { value: [36m[Array][39m, from: [32m'runtime'[39m }, hosts: { value: [1mnull[22m, from: [32m'default'[39m }, isInteractive: { value: [33mtrue[39m, from: [32m'default'[39m } } } [36m+1ms[0m
+  [36;1mcypress:data-context:sources:FileDataSource [0mglobbing pattern(s): [ [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m ] [36m+0ms[0m
+  [36;1mcypress:data-context:sources:FileDataSource [0mwithin directory: /cypress [36m+1ms[0m
+  [34;1mcypress:data-context:sources:ProjectDataSource [0mfound specs [ [32m'/cypress/cypress/e2e/test.cy.ts'[39m ] [34m+0ms[0m
+  [33;1mcypress:data-context:sources:GitDataSource [0mgetting git info for [ [32m'/cypress/cypress/e2e/test.cy.ts'[39m ]: [33m+1s[0m
+  [33;1mcypress:data-context:sources:GitDataSource [0mexecuting command: `IFS=$'
+'; for file in "/cypress/cypress/e2e/test.cy.ts"; do echo $(git log --max-count=1 --pretty="format:%ci %ar %an|%h|%s" $file); done` [33m+0ms[0m
+  [33;1mcypress:data-context:sources:GitDataSource [0mcwd: `/cypress` [33m+0ms[0m
+  [32;1mcypress:data-context:codegen:code-generator [0mhasNonExampleSpec - calling with template directory "/root/.cache/Cypress/13.6.6/Cypress/resources/app/packages/example/cypress/e2e" and 1 [32m+0ms[0m
+  [33;1mcypress:server:browsers:utils [0msearching for browser { nameOrPath: [32m'electron'[39m, filter: { name: [32m'electron'[39m, channel: [32m'stable'[39m }, knownBrowsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ] } [33m+976ms[0m
+  [34;1mcypress:data-context [0mbrowser found to set electron [34m+0ms[0m
+  [32;1mcypress:server:appdata [0mpath: /root/.config/Cypress/cy/production/cache [32m+2s[0m
+  [31;1mcypress:server:saved_state [0mmaking saved state from /root/.cache/Cypress/13.6.6/Cypress/resources/app/packages/server [31m+0ms[0m
+  [31;1mcypress:server:saved_state [0mmissing project path, looking for project here [31m+0ms[0m
+  [31;1mcypress:server:saved_state [0mstate path for global mode [31m+3ms[0m
+  [32;1mcypress:server:appdata [0mpath: /root/.config/Cypress/cy/production/projects/__global__/state.json [32m+8ms[0m
+  [31;1mcypress:server:saved_state [0mfull state path /root/.config/Cypress/cy/production/projects/__global__/state.json [31m+0ms[0m
+  [31;1mcypress:server:saved_state [0mmaking new state file around /root/.config/Cypress/cy/production/projects/__global__/state.json [31m+0ms[0m
+  [32;1mcypress:data-context:codegen:code-generator [0mhasNonExampleSpec - checking for spec test.cy.ts [32m+26ms[0m
+  [31;1mcypress:server:run [0mrun mode ready with options { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {}, projectRoot: [32m'/cypress'[39m, socketId: [32m'p6bdos25aj'[39m, isTextTerminal: [33mtrue[39m, browser: [32m'electron'[39m, morgan: [33mfalse[39m, report: [33mtrue[39m, testingType: [32m'e2e'[39m } [31m+1s[0m
+  [33;1mcypress:server:browsers:utils [0mgetBrowsers [33m+19ms[0m
+  [36;1mcypress:launcher:detect [0mdetecting if the following browsers are present [ { name: [32m'chrome'[39m, family: [32m'chromium'[39m, channel: [32m'stable'[39m, displayName: [32m'Chrome'[39m, versionRegex: [31m/Google Chrome (\S+)/m[39m, binary: [ [32m'google-chrome'[39m, [32m'chrome'[39m, [32m'google-chrome-stable'[39m ], minSupportedVersion: [33m64[39m }, { name: [32m'chromium'[39m, family: [32m'chromium'[39m, channel: [32m'stable'[39m, displayName: [32m'Chromium'[39m, versionRegex: [31m/Chromium (\S+)/m[39m, binary: [ [32m'chromium-browser'[39m, [32m'chromium'[39m ], minSupportedVersion: [33m64[39m }, { name: [32m'chrome'[39m, family: [32m'chromium'[39m, channel: [32m'beta'[39m, displayName: [32m'Chrome Beta'[39m, versionRegex: [31m/Google Chrome (\S+) beta/m[39m, binary: [32m'google-chrome-beta'[39m, minSupportedVersion: [33m64[39m }, { name: [32m'chrome'[39m, family: [32m'chromium'[39m, channel: [32m'canary'[39m, displayName: [32m'Canary'[39m, versionRegex: [31m/Google Chrome Canary (\S+)/m[39m, binary: [32m'google-chrome-canary'[39m, minSupportedVersion: [33m64[39m }, { name: [32m'firefox'[39m, family: [32m'firefox'[39m, channel: [32m'stable'[39m, displayName: [32m'Firefox'[39m, versionRegex: [31m/^Mozilla Firefox ([^\sab]+)$/m[39m, binary: [32m'firefox'[39m, minSupportedVersion: [33m86[39m, validator: [36m[Function: validator][39m }, { name: [32m'firefox'[39m, family: [32m'firefox'[39m, channel: [32m'dev'[39m, displayName: [32m'Firefox Developer Edition'[39m, versionRegex: [31m/^Mozilla Firefox (\S+b\S*)$/m[39m, binary: [ [32m'firefox-developer-edition'[39m, [32m'firefox'[39m ], minSupportedVersion: [33m86[39m }, { name: [32m'firefox'[39m, family: [32m'firefox'[39m, channel: [32m'nightly'[39m, displayName: [32m'Firefox Nightly'[39m, versionRegex: [31m/^Mozilla Firefox (\S+a\S*)$/m[39m, binary: [ [32m'firefox-nightly'[39m, [32m'firefox-trunk'[39m ], minSupportedVersion: [33m86[39m }, { name: [32m'edge'[39m, family: [32m'chromium'[39m, channel: [32m'stable'[39m, displayName: [32m'Edge'[39m, versionRegex: [31m/Microsoft Edge (\S+)/im[39m, binary: [ [32m'edge'[39m, [32m'microsoft-edge'[39m ], minSupportedVersion: [33m79[39m }, { name: [32m'edge'[39m, family: [32m'chromium'[39m, channel: [32m'canary'[39m, displayName: [32m'Edge Canary'[39m, versionRegex: [31m/Microsoft Edge.+?(\S*(?= canary)|(?<=canary )\S*)/im[39m, binary: [ [32m'edge-canary'[39m, [32m'microsoft-edge-canary'[39m ], minSupportedVersion: [33m79[39m }, { name: [32m'edge'[39m, family: [32m'chromium'[39m, channel: [32m'beta'[39m, displayName: [32m'Edge Beta'[39m, versionRegex: [31m/Microsoft Edge.+?(\S*(?= beta)|(?<=beta )\S*)/im[39m, binary: [ [32m'edge-beta'[39m, [32m'microsoft-edge-beta'[39m ], minSupportedVersion: [33m79[39m }, { name: [32m'edge'[39m, family: [32m'chromium'[39m, channel: [32m'dev'[39m, displayName: [32m'Edge Dev'[39m, versionRegex: [31m/Microsoft Edge.+?(\S*(?= dev)|(?<=dev )\S*)/im[39m, binary: [ [32m'edge-dev'[39m, [32m'microsoft-edge-dev'[39m ], minSupportedVersion: [33m79[39m } ] [36m+1s[0m
+  [33;1mcypress:server:browsers:utils [0mWebKit is enabled, but there was an error constructing the WebKit browser: { err: Error: Cannot find module 'playwright-webkit' Require stack: - /root/.cache/Cypress/13.6.6/Cypress/resources/app/packages/server/lib/browsers/utils.ts [90m    at node:internal/modules/cjs/loader:1084:15[39m [90m    at Function._resolveFilename (node:electron/js2c/browser_init:2:116646)[39m [90m    at resolve (node:internal/modules/cjs/helpers:127:19)[39m at Function.resolve (evalmachine.<anonymous>:1:747857) at P (<embedded>:4432:80141) at Object.I [as get] (<embedded>:4432:80976) at W (<embedded>:4504:141573) at Object.H (<embedded>:4504:144279) { code: [32m'MODULE_NOT_FOUND'[39m, requireStack: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app/packages/server/lib/browsers/utils.ts'[39m ] } } [33m+1ms[0m
+  [33;1mcypress:data-context:sources:GitDataSource [0mcommand execution error: { stdout: [32m'2024-03-08 22:04:11 +0300 24 minutes ago Josh Atkins|ccf1cab|initiate repo'[39m, stderr: [32m''[39m, code: [33m0[39m, failed: [33mfalse[39m, killed: [33mfalse[39m, signal: [1mnull[22m, cmd: [32m"IFS=$'\n"[39m + [32m`'; for file in "/cypress/cypress/e2e/test.cy.ts"; do echo $(git log --max-count=1 --pretty="format:i %ar %an|%h|%s" $file); done`[39m, timedOut: [33mfalse[39m }
+  [33;1mcypress:server:browsers:utils [0mfound browsers { browsers: [] } [33m+197ms[0m
+  [31;1mcypress:server:run [0mfound all system browsers [ { channel: [32m'stable'[39m, displayName: [32m'Electron'[39m, family: [32m'chromium'[39m, majorVersion: [33m118[39m, name: [32m'electron'[39m, path: [32m''[39m, version: [32m'118.0.5993.159'[39m } ] [31m+199ms[0m
+  [33;1mcypress:server:open_project [0mopen_project create /cypress [33m+0ms[0m
+  [33;1mcypress:server:open_project [0mopening project /cypress [33m+0ms[0m
+  [33;1mcypress:server:open_project [0mand options { socketId: [32m'p6bdos25aj'[39m, morgan: [33mfalse[39m, report: [33mtrue[39m, isTextTerminal: [33mtrue[39m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], onWarning: [36m[Function: F][39m, spec: [90mundefined[39m, onError: [36m[Function (anonymous)][39m, onReloadBrowser: [36m[Function: onReloadBrowser][39m, args: { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {}, projectRoot: [32m'/cypress'[39m, socketId: [32m'p6bdos25aj'[39m, isTextTerminal: [33mtrue[39m, browser: [32m'electron'[39m, morgan: [33mfalse[39m, report: [33mtrue[39m, testingType: [32m'e2e'[39m, onError: [36m[Function (anonymous)][39m, browsers: [ [36m[Object][39m ] } } [33m+0ms[0m
+  [34;1mcypress:server:project [0mProject created { testingType: [32m'e2e'[39m, projectRoot: [32m'/cypress'[39m } [34m+0ms[0m
+  [34;1mcypress:server:project [0mopening project instance /cypress [34m+0ms[0m
+  [34;1mcypress:server:project [0mproject open options { report: [33mtrue[39m, onFocusTests: [36m[Function: onFocusTests][39m, onError: [36m[Function (anonymous)][39m, onWarning: [36m[Function: F][39m, socketId: [32m'p6bdos25aj'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], spec: [90mundefined[39m, onReloadBrowser: [36m[Function: onReloadBrowser][39m, args: { _: [ [32m'/root/.cache/Cypress/13.6.6/Cypress/Cypress'[39m ], sandbox: [33mfalse[39m, runProject: [32m'/cypress'[39m, quiet: [33mtrue[39m, cwd: [32m'/cypress'[39m, userNodePath: [32m'/usr/local/bin/node'[39m, userNodeVersion: [32m'20.11.0'[39m, invokedFromCli: [33mtrue[39m, config: {}, projectRoot: [32m'/cypress'[39m, socketId: [32m'p6bdos25aj'[39m, isTextTerminal: [33mtrue[39m, browser: [32m'electron'[39m, morgan: [33mfalse[39m, report: [33mtrue[39m, testingType: [32m'e2e'[39m, onError: [36m[Function (anonymous)][39m, browsers: [ [36m[Object][39m ] }, testingType: [32m'e2e'[39m } [34m+0ms[0m
+  [34;1mcypress:server:project [0mproject has config { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, configFile: [32m'cypress.config.ts'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, socketId: [32m'p6bdos25aj'[39m, report: [33mtrue[39m, animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, blockHosts: [1mnull[22m, chromeWebSecurity: [33mtrue[39m, clientCertificates: [], defaultCommandTimeout: [33m4000[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalOriginDependencies: [33mfalse[39m, experimentalSourceRewriting: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, excludeSpecPattern: [32m'*.hot-update.js'[39m, includeShadowDom: [33mfalse[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, numTestsKeptInMemory: [33m0[39m, platform: [32m'linux'[39m, pageLoadTimeout: [33m60000[39m, port: [1mnull[22m, projectId: [1mnull[22m, redirectionLimit: [33m20[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, requestTimeout: [33m5000[39m, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m, experimentalStrategy: [90mundefined[39m, experimentalOptions: [90mundefined[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, slowTestThreshold: [33m10000[39m, scrollBehavior: [32m'top'[39m, supportFolder: [33mfalse[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, additionalIgnorePattern: [], autoOpen: [33mfalse[39m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], clientRoute: [32m'/__/'[39m, cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, devServerPublicPathRoute: [32m'/__cypress/src'[39m, hosts: [1mnull[22m, isInteractive: [33mtrue[39m, namespace: [32m'__cypress'[39m, reporterRoute: [32m'/__cypress/reporter'[39m, socketIoCookie: [32m'__socket'[39m, socketIoRoute: [32m'/__socket'[39m, version: [32m'13.6.6'[39m, protocolEnabled: [33mfalse[39m, hideCommandLog: [33mfalse[39m, hideRunnerUi: [33mfalse[39m, cypressEnv: [32m'production'[39m, resolved: { animationDistanceThreshold: { value: [33m5[39m, from: [32m'default'[39m }, arch: { value: [32m'x64'[39m, from: [32m'default'[39m }, baseUrl: { value: [32m'https://google.com'[39m, from: [32m'config'[39m }, blockHosts: { value: [1mnull[22m, from: [32m'default'[39m }, chromeWebSecurity: { value: [33mtrue[39m, from: [32m'default'[39m }, clientCertificates: { value: [], from: [32m'default'[39m }, defaultCommandTimeout: { value: [33m4000[39m, from: [32m'default'[39m }, downloadsFolder: { value: [32m'cypress/downloads'[39m, from: [32m'default'[39m }, env: { CACHE_FOLDER: [36m[Object][39m, FACTORY_DEFAULT_NODE_VERSION: [36m[Object][39m }, execTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, experimentalCspAllowList: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalFetchPolyfill: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalInteractiveRunEvents: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalRunAllSpecs: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalMemoryManagement: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalModifyObstructiveThirdPartyCode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSkipDomainInjection: { value: [1mnull[22m, from: [32m'default'[39m }, experimentalOriginDependencies: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSourceRewriting: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSingleTabRunMode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalStudio: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalWebKitSupport: { value: [33mfalse[39m, from: [32m'default'[39m }, fileServerFolder: { value: [32m''[39m, from: [32m'default'[39m }, fixturesFolder: { value: [32m'cypress/fixtures'[39m, from: [32m'default'[39m }, excludeSpecPattern: { value: [32m'*.hot-update.js'[39m, from: [32m'default'[39m }, includeShadowDom: { value: [33mfalse[39m, from: [32m'default'[39m }, keystrokeDelay: { value: [33m0[39m, from: [32m'default'[39m }, modifyObstructiveCode: { value: [33mtrue[39m, from: [32m'default'[39m }, numTestsKeptInMemory: { value: [33m0[39m, from: [32m'config'[39m }, platform: { value: [32m'linux'[39m, from: [32m'default'[39m }, pageLoadTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, port: { value: [1mnull[22m, from: [32m'default'[39m }, projectId: { value: [1mnull[22m, from: [32m'default'[39m }, redirectionLimit: { value: [33m20[39m, from: [32m'default'[39m }, reporter: { value: [32m'spec'[39m, from: [32m'default'[39m }, reporterOptions: { value: [1mnull[22m, from: [32m'default'[39m }, requestTimeout: { value: [33m5000[39m, from: [32m'default'[39m }, resolvedNodePath: { value: [1mnull[22m, from: [32m'default'[39m }, resolvedNodeVersion: { value: [1mnull[22m, from: [32m'default'[39m }, responseTimeout: { value: [33m30000[39m, from: [32m'default'[39m }, retries: { value: [36m[Object][39m, from: [32m'default'[39m }, screenshotOnRunFailure: { value: [33mtrue[39m, from: [32m'default'[39m }, screenshotsFolder: { value: [32m'cypress/screenshots'[39m, from: [32m'default'[39m }, slowTestThreshold: { value: [33m10000[39m, from: [32m'default'[39m }, scrollBehavior: { value: [32m'top'[39m, from: [32m'default'[39m }, supportFile: { value: [33mfalse[39m, from: [32m'config'[39m }, supportFolder: { value: [33mfalse[39m, from: [32m'default'[39m }, taskTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, testIsolation: { value: [33mtrue[39m, from: [32m'default'[39m }, trashAssetsBeforeRuns: { value: [33mtrue[39m, from: [32m'default'[39m }, userAgent: { value: [1mnull[22m, from: [32m'default'[39m }, video: { value: [33mfalse[39m, from: [32m'default'[39m }, videoCompression: { value: [33mfalse[39m, from: [32m'default'[39m }, videosFolder: { value: [32m'cypress/videos'[39m, from: [32m'default'[39m }, viewportHeight: { value: [33m660[39m, from: [32m'default'[39m }, viewportWidth: { value: [33m1000[39m, from: [32m'default'[39m }, waitForAnimations: { value: [33mtrue[39m, from: [32m'default'[39m }, watchForFileChanges: { value: [33mfalse[39m, from: [32m'config'[39m }, specPattern: { value: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, from: [32m'default'[39m }, browsers: { value: [36m[Array][39m, from: [32m'runtime'[39m }, hosts: { value: [1mnull[22m, from: [32m'default'[39m }, isInteractive: { value: [33mtrue[39m, from: [32m'default'[39m } }, testingType: [32m'e2e'[39m } [34m+0ms[0m
+  [32;1mcypress:server:server-base [0mserver open [32m+0ms[0m
+  [32;1mcypress:network:client-certificates [0mloaded client certificates for 0 URL(s) [32m+0ms[0m
+  [32;1mcypress:server:server-base [0mcreateServer connecting to server [32m+19ms[0m
+  [32;1mcypress:server:server-base [0mServer listening on  { address: '127.0.0.1', family: 'IPv4', port: 37545 } [32m+5ms[0m
+  [32;1mcypress:server:appdata [0mpath: /root/.config/Cypress/cy/production/proxy [32m+240ms[0m
+  [32;1mcypress:https-proxy:ca [0mchecking CA version { actualVersion: [33m1[39m, CA_VERSION: [33m1[39m } [32m+0ms[0m
+  [32;1mcypress:https-proxy [0mCreated SNI HTTPS Proxy Server { port: 39965 } [32m+0ms[0m
+  [33;1mcypress:server:ensure-url [0mchecking that baseUrl is available {
+  baseUrl: 'https://google.com',
+  delaysRemaining: [ 3000, 3000, 4000 ],
+  retryIntervals: [ 3000, 3000, 4000 ]
+} [33m+0ms[0m
+  [32;1mcypress:network:connect [0mbeginning getAddress { hostname: [32m'google.com'[39m, port: [33m443[39m } [32m+0ms[0m
+  [32;1mcypress:network:connect [0mgot addresses { hostname: [32m'google.com'[39m, port: [33m443[39m, addresses: [ { address: [32m'192.0.0.88'[39m, family: [33m4[39m } ] } [32m+10ms[0m
+  [35;1mcypress:network:cors [0mParsed URL { port: [32m'443'[39m, protocol: [32m'https:'[39m, subdomain: [1mnull[22m, domain: [32m'google'[39m, tld: [32m'com'[39m } [35m+0ms[0m
+  [35;1mcypress:network:cors [0mParsed URL { port: [32m'443'[39m, protocol: [32m'https:'[39m, subdomain: [1mnull[22m, domain: [32m'google'[39m, tld: [32m'com'[39m } [35m+1ms[0m
+  [31;1mcypress:server:remote-states [0msetting remote state { auth: [90mundefined[39m, origin: [32m'https://google.com'[39m, strategy: [32m'http'[39m, fileServer: [1mnull[22m, domainName: [32m'google.com'[39m, props: { port: [32m'443'[39m, protocol: [32m'https:'[39m, subdomain: [1mnull[22m, domain: [32m'google'[39m, tld: [32m'com'[39m } } for https://google.com [31m+0ms[0m
+  [35;1mcypress:network:cors [0mParsed URL { port: [32m'443'[39m, protocol: [32m'https:'[39m, subdomain: [1mnull[22m, domain: [32m'google'[39m, tld: [32m'com'[39m } [35m+1ms[0m
+  [31;1mcypress:server:remote-states [0mgetting remote state: { auth: [90mundefined[39m, origin: [32m'https://google.com'[39m, strategy: [32m'http'[39m, fileServer: [1mnull[22m, domainName: [32m'google.com'[39m, props: { port: [32m'443'[39m, protocol: [32m'https:'[39m, subdomain: [1mnull[22m, domain: [32m'google'[39m, tld: [32m'com'[39m } } for: https://google.com [31m+1ms[0m
+  [34;1mcypress:server:project [0mproject config: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, configFile: [32m'cypress.config.ts'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, socketId: [32m'p6bdos25aj'[39m, report: [33mtrue[39m, animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, blockHosts: [1mnull[22m, chromeWebSecurity: [33mtrue[39m, clientCertificates: [], defaultCommandTimeout: [33m4000[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalOriginDependencies: [33mfalse[39m, experimentalSourceRewriting: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, excludeSpecPattern: [32m'*.hot-update.js'[39m, includeShadowDom: [33mfalse[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, numTestsKeptInMemory: [33m0[39m, platform: [32m'linux'[39m, pageLoadTimeout: [33m60000[39m, port: [33m37545[39m, projectId: [1mnull[22m, redirectionLimit: [33m20[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, requestTimeout: [33m5000[39m, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m, experimentalStrategy: [90mundefined[39m, experimentalOptions: [90mundefined[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, slowTestThreshold: [33m10000[39m, scrollBehavior: [32m'top'[39m, supportFolder: [33mfalse[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, additionalIgnorePattern: [], autoOpen: [33mfalse[39m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], clientRoute: [32m'/__/'[39m, cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, devServerPublicPathRoute: [32m'/__cypress/src'[39m, hosts: [1mnull[22m, isInteractive: [33mtrue[39m, namespace: [32m'__cypress'[39m, reporterRoute: [32m'/__cypress/reporter'[39m, socketIoCookie: [32m'__socket'[39m, socketIoRoute: [32m'/__socket'[39m, version: [32m'13.6.6'[39m, protocolEnabled: [33mfalse[39m, hideCommandLog: [33mfalse[39m, hideRunnerUi: [33mfalse[39m, cypressEnv: [32m'production'[39m, testingType: [32m'e2e'[39m, remote: {}, browser: [1mnull[22m, specs: [], proxyUrl: [32m'http://localhost:37545'[39m, browserUrl: [32m'https://google.com/__/'[39m, reporterUrl: [32m'https://google.com/__cypress/reporter'[39m, proxyServer: [32m'http://localhost:37545'[39m } [34m+184ms[0m
+  [31;1mcypress:server:reporter [0mtrying to load reporter: spec [31m+0ms[0m
+  [31;1mcypress:server:reporter [0mspec is Mocha reporter [31m+0ms[0m
+  [31;1mcypress:server:saved_state [0mnoop saved state [31m+405ms[0m
+  [34;1mcypress:server:project [0mproject has config { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m, rawJson: { e2e: { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m }, baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, envFile: {}, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, repoRoot: [32m'/cypress'[39m }, configFile: [32m'cypress.config.ts'[39m, morgan: [33mfalse[39m, isTextTerminal: [33mtrue[39m, socketId: [32m'p6bdos25aj'[39m, report: [33mtrue[39m, animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, blockHosts: [1mnull[22m, chromeWebSecurity: [33mtrue[39m, clientCertificates: [], defaultCommandTimeout: [33m4000[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalOriginDependencies: [33mfalse[39m, experimentalSourceRewriting: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, excludeSpecPattern: [32m'*.hot-update.js'[39m, includeShadowDom: [33mfalse[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, numTestsKeptInMemory: [33m0[39m, platform: [32m'linux'[39m, pageLoadTimeout: [33m60000[39m, port: [33m37545[39m, projectId: [1mnull[22m, redirectionLimit: [33m20[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, requestTimeout: [33m5000[39m, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m, experimentalStrategy: [90mundefined[39m, experimentalOptions: [90mundefined[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, slowTestThreshold: [33m10000[39m, scrollBehavior: [32m'top'[39m, supportFolder: [33mfalse[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, additionalIgnorePattern: [], autoOpen: [33mfalse[39m, browsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ], clientRoute: [32m'/__/'[39m, cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, devServerPublicPathRoute: [32m'/__cypress/src'[39m, hosts: [1mnull[22m, isInteractive: [33mtrue[39m, namespace: [32m'__cypress'[39m, reporterRoute: [32m'/__cypress/reporter'[39m, socketIoCookie: [32m'__socket'[39m, socketIoRoute: [32m'/__socket'[39m, version: [32m'13.6.6'[39m, protocolEnabled: [33mfalse[39m, hideCommandLog: [33mfalse[39m, hideRunnerUi: [33mfalse[39m, cypressEnv: [32m'production'[39m, resolved: { animationDistanceThreshold: { value: [33m5[39m, from: [32m'default'[39m }, arch: { value: [32m'x64'[39m, from: [32m'default'[39m }, baseUrl: { value: [32m'https://google.com'[39m, from: [32m'config'[39m }, blockHosts: { value: [1mnull[22m, from: [32m'default'[39m }, chromeWebSecurity: { value: [33mtrue[39m, from: [32m'default'[39m }, clientCertificates: { value: [], from: [32m'default'[39m }, defaultCommandTimeout: { value: [33m4000[39m, from: [32m'default'[39m }, downloadsFolder: { value: [32m'cypress/downloads'[39m, from: [32m'default'[39m }, env: { CACHE_FOLDER: [36m[Object][39m, FACTORY_DEFAULT_NODE_VERSION: [36m[Object][39m }, execTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, experimentalCspAllowList: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalFetchPolyfill: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalInteractiveRunEvents: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalRunAllSpecs: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalMemoryManagement: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalModifyObstructiveThirdPartyCode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSkipDomainInjection: { value: [1mnull[22m, from: [32m'default'[39m }, experimentalOriginDependencies: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSourceRewriting: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalSingleTabRunMode: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalStudio: { value: [33mfalse[39m, from: [32m'default'[39m }, experimentalWebKitSupport: { value: [33mfalse[39m, from: [32m'default'[39m }, fileServerFolder: { value: [32m''[39m, from: [32m'default'[39m }, fixturesFolder: { value: [32m'cypress/fixtures'[39m, from: [32m'default'[39m }, excludeSpecPattern: { value: [32m'*.hot-update.js'[39m, from: [32m'default'[39m }, includeShadowDom: { value: [33mfalse[39m, from: [32m'default'[39m }, keystrokeDelay: { value: [33m0[39m, from: [32m'default'[39m }, modifyObstructiveCode: { value: [33mtrue[39m, from: [32m'default'[39m }, numTestsKeptInMemory: { value: [33m0[39m, from: [32m'config'[39m }, platform: { value: [32m'linux'[39m, from: [32m'default'[39m }, pageLoadTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, port: { value: [1mnull[22m, from: [32m'default'[39m }, projectId: { value: [1mnull[22m, from: [32m'default'[39m }, redirectionLimit: { value: [33m20[39m, from: [32m'default'[39m }, reporter: { value: [32m'spec'[39m, from: [32m'default'[39m }, reporterOptions: { value: [1mnull[22m, from: [32m'default'[39m }, requestTimeout: { value: [33m5000[39m, from: [32m'default'[39m }, resolvedNodePath: { value: [1mnull[22m, from: [32m'default'[39m }, resolvedNodeVersion: { value: [1mnull[22m, from: [32m'default'[39m }, responseTimeout: { value: [33m30000[39m, from: [32m'default'[39m }, retries: { value: [36m[Object][39m, from: [32m'default'[39m }, screenshotOnRunFailure: { value: [33mtrue[39m, from: [32m'default'[39m }, screenshotsFolder: { value: [32m'cypress/screenshots'[39m, from: [32m'default'[39m }, slowTestThreshold: { value: [33m10000[39m, from: [32m'default'[39m }, scrollBehavior: { value: [32m'top'[39m, from: [32m'default'[39m }, supportFile: { value: [33mfalse[39m, from: [32m'config'[39m }, supportFolder: { value: [33mfalse[39m, from: [32m'default'[39m }, taskTimeout: { value: [33m60000[39m, from: [32m'default'[39m }, testIsolation: { value: [33mtrue[39m, from: [32m'default'[39m }, trashAssetsBeforeRuns: { value: [33mtrue[39m, from: [32m'default'[39m }, userAgent: { value: [1mnull[22m, from: [32m'default'[39m }, video: { value: [33mfalse[39m, from: [32m'default'[39m }, videoCompression: { value: [33mfalse[39m, from: [32m'default'[39m }, videosFolder: { value: [32m'cypress/videos'[39m, from: [32m'default'[39m }, viewportHeight: { value: [33m660[39m, from: [32m'default'[39m }, viewportWidth: { value: [33m1000[39m, from: [32m'default'[39m }, waitForAnimations: { value: [33mtrue[39m, from: [32m'default'[39m }, watchForFileChanges: { value: [33mfalse[39m, from: [32m'config'[39m }, specPattern: { value: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, from: [32m'default'[39m }, browsers: { value: [36m[Array][39m, from: [32m'runtime'[39m }, hosts: { value: [1mnull[22m, from: [32m'default'[39m }, isInteractive: { value: [33mtrue[39m, from: [32m'default'[39m } }, testingType: [32m'e2e'[39m, remote: {}, browser: [1mnull[22m, specs: [], proxyUrl: [32m'http://localhost:37545'[39m, browserUrl: [32m'https://google.com/__/'[39m, reporterUrl: [32m'https://google.com/__cypress/reporter'[39m, proxyServer: [32m'http://localhost:37545'[39m, state: {} } [34m+12ms[0m
+  [35;1mcypress:network:cors [0mParsed URL { port: [32m'443'[39m, protocol: [32m'https:'[39m, subdomain: [1mnull[22m, domain: [32m'google'[39m, tld: [32m'com'[39m } [35m+14ms[0m
+  [31;1mcypress:server:remote-states [0mgetting remote state: { auth: [90mundefined[39m, origin: [32m'https://google.com'[39m, strategy: [32m'http'[39m, fileServer: [1mnull[22m, domainName: [32m'google.com'[39m, props: { port: [32m'443'[39m, protocol: [32m'https:'[39m, subdomain: [1mnull[22m, domain: [32m'google'[39m, tld: [32m'com'[39m } } for: https://google.com [31m+14ms[0m
+  [31;1mcypress:server:run [0mproject created and opened with config { baseUrl: [32m'https://google.com'[39m, supportFile: [33mfalse[39m, video: [33mfalse[39m, projectRoot: [32m'/cypress'[39m, projectName: [32m'cypress'[39m, configFile: [32m'cypress.config.ts'[39m, isTextTerminal: [33mtrue[39m, animationDistanceThreshold: [33m5[39m, arch: [32m'x64'[39m, blockHosts: [1mnull[22m, chromeWebSecurity: [33mtrue[39m, clientCertificates: [], defaultCommandTimeout: [33m4000[39m, downloadsFolder: [32m'/cypress/cypress/downloads'[39m, env: { CACHE_FOLDER: [32m'/root/.cache/Cypress'[39m, FACTORY_DEFAULT_NODE_VERSION: [32m'20.11.0'[39m }, execTimeout: [33m60000[39m, experimentalCspAllowList: [33mfalse[39m, experimentalFetchPolyfill: [33mfalse[39m, experimentalInteractiveRunEvents: [33mfalse[39m, experimentalRunAllSpecs: [33mfalse[39m, experimentalMemoryManagement: [33mfalse[39m, experimentalModifyObstructiveThirdPartyCode: [33mfalse[39m, experimentalSkipDomainInjection: [1mnull[22m, experimentalOriginDependencies: [33mfalse[39m, experimentalSourceRewriting: [33mfalse[39m, experimentalSingleTabRunMode: [33mfalse[39m, experimentalStudio: [33mfalse[39m, experimentalWebKitSupport: [33mfalse[39m, fileServerFolder: [32m'/cypress'[39m, fixturesFolder: [32m'/cypress/cypress/fixtures'[39m, excludeSpecPattern: [32m'*.hot-update.js'[39m, includeShadowDom: [33mfalse[39m, keystrokeDelay: [33m0[39m, modifyObstructiveCode: [33mtrue[39m, numTestsKeptInMemory: [33m0[39m, platform: [32m'linux'[39m, pageLoadTimeout: [33m60000[39m, port: [33m37545[39m, projectId: [1mnull[22m, redirectionLimit: [33m20[39m, reporter: [32m'spec'[39m, reporterOptions: [1mnull[22m, requestTimeout: [33m5000[39m, resolvedNodePath: [32m'/usr/local/bin/node'[39m, resolvedNodeVersion: [32m'20.11.0'[39m, responseTimeout: [33m30000[39m, retries: { runMode: [33m0[39m, openMode: [33m0[39m, experimentalStrategy: [90mundefined[39m, experimentalOptions: [90mundefined[39m }, screenshotOnRunFailure: [33mtrue[39m, screenshotsFolder: [32m'/cypress/cypress/screenshots'[39m, slowTestThreshold: [33m10000[39m, scrollBehavior: [32m'top'[39m, taskTimeout: [33m60000[39m, testIsolation: [33mtrue[39m, trashAssetsBeforeRuns: [33mtrue[39m, userAgent: [1mnull[22m, videoCompression: [33mfalse[39m, videosFolder: [32m'/cypress/cypress/videos'[39m, viewportHeight: [33m660[39m, viewportWidth: [33m1000[39m, waitForAnimations: [33mtrue[39m, watchForFileChanges: [33mfalse[39m, specPattern: [32m'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'[39m, browsers: [ { channel: [32m'stable'[39m, displayName: [32m'Electron'[39m, family: [32m'chromium'[39m, majorVersion: [33m118[39m, name: [32m'electron'[39m, path: [32m''[39m, version: [32m'118.0.5993.159'[39m } ], cypressBinaryRoot: [32m'/root/.cache/Cypress/13.6.6/Cypress/resources/app'[39m, hosts: [1mnull[22m, isInteractive: [33mtrue[39m, version: [32m'13.6.6'[39m, testingType: [32m'e2e'[39m, browser: [1mnull[22m, cypressInternalEnv: [32m'production'[39m } [31m+200ms[0m
+  [33;1mcypress:server:browsers:utils [0msearching for browser { nameOrPath: [32m'electron'[39m, filter: { name: [32m'electron'[39m, channel: [32m'stable'[39m }, knownBrowsers: [ { name: [32m'electron'[39m, channel: [32m'stable'[39m, family: [32m'chromium'[39m, displayName: [32m'Electron'[39m, version: [32m'118.0.5993.159'[39m, path: [32m''[39m, majorVersion: [33m118[39m } ] } [33m+202ms[0m
+  [31;1mcypress:server:profilecleaner [0mfound 0 root level profile matches: [] [31m+0ms[0m
+  [31;1mcypress:server:profilecleaner [0mfound 0 profile folders: [] [31m+1ms[0m
+  [31;1mcypress:server:profilecleaner [0mfound 0 profile folders: [] [31m+0ms[0m
+  [34;1mcypress:snapshot:error [0mTypeError [ERR_INVALID_ARG_TYPE]: The "paths[1]" argument must be of type string. Received undefined
+  [34;1mcypress:snapshot:error [0m    at new NodeError (node:internal/errors:405:5)
+  [34;1mcypress:snapshot:error [0m    at validateString (node:internal/validators:162:11)
+  [34;1mcypress:snapshot:error [0m    at Object.resolve (node:path:1097:7)
+  [34;1mcypress:snapshot:error [0m    at Object.resolve (evalmachine.<anonymous>:1:765400)
+  [34;1mcypress:snapshot:error [0m    at resolvePathsAndParent (<embedded>:4511:1077511)
+  [34;1mcypress:snapshot:error [0m    at customRequire (<embedded>:4511:1076567)
+  [34;1mcypress:snapshot:error [0m    at c (<embedded>:2827:111097)
+  [34;1mcypress:snapshot:error [0m    at <embedded>:2827:111632
+  [34;1mcypress:snapshot:error [0m    at <embedded>:4511:18500
+  [34;1mcypress:snapshot:error [0m    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3) [34m+0ms[0m
+  [34;1mcypress:snapshot:error [0mTypeError [ERR_INVALID_ARG_TYPE]: The "paths[1]" argument must be of type string. Received undefined
+  [34;1mcypress:snapshot:error [0m    at new NodeError (node:internal/errors:405:5)
+  [34;1mcypress:snapshot:error [0m    at validateString (node:internal/validators:162:11)
+  [34;1mcypress:snapshot:error [0m    at Object.resolve (node:path:1097:7)
+  [34;1mcypress:snapshot:error [0m    at Object.resolve (evalmachine.<anonymous>:1:765400)
+  [34;1mcypress:snapshot:error [0m    at resolvePathsAndParent (<embedded>:4511:1077539)
+  [34;1mcypress:snapshot:error [0m    at customRequire (<embedded>:4511:1076567)
+  [34;1mcypress:snapshot:error [0m    at c (<embedded>:2827:111097)
+  [34;1mcypress:snapshot:error [0m    at <embedded>:2827:111632
+  [34;1mcypress:snapshot:error [0m    at <embedded>:4511:18500
+  [34;1mcypress:snapshot:error [0m    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3) [34m+1ms[0m
+  [36;1mcypress:lifecycle:EventRegistrar [0mplugin event registered? { eventName: [32m'before:run'[39m, isRegistered: [33mfalse[39m } [36m+488ms[0m
+  [31;1mcypress:server:run [0mabout to run spec { spec: { absolute: [32m'/cypress/cypress/e2e/test.cy.ts'[39m, fileExtension: [32m'.ts'[39m, fileName: [32m'test'[39m, name: [32m'test.cy.ts'[39m, relative: [32m'cypress/e2e/test.cy.ts'[39m }, isHeadless: [33mtrue[39m, browser: { channel: [32m'stable'[39m, displayName: [32m'Electron'[39m, family: [32m'chromium'[39m, majorVersion: [33m118[39m, name: [32m'electron'[39m, path: [32m''[39m, version: [32m'118.0.5993.159'[39m } } [31m+12ms[0m
